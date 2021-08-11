@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Studio Ghibli Film Theories" />
         <meta name="author" content=" Laila B " />
-        <title>Ghibli Theories</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap Icons-->
@@ -17,6 +16,9 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        {% block content %}
+        {% endblock %}
+        <title>Ghibli Theories</title>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -27,7 +29,7 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href="browse.html">BROWSE</a></li>
                         <li class="nav-item"><a class="nav-link" href="login.html">LOGIN</a></li>
                         <li class="nav-item"><a class="nav-link" href="register.html">REGISTER</a></li>
@@ -36,10 +38,8 @@
             </div>
         </nav>
       </div>
+      {% block content %}
+      {% endblock %}
 
-    <h1>I'm part of the base template!</h1>
-    {% block content %}
-    {% endblock %}
-
-</body>
+    </body>
 </html>

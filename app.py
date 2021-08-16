@@ -33,7 +33,6 @@ def get_posts():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        print("testing")
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
@@ -52,7 +51,9 @@ def register():
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("profile", username=session["user"]))
+
     return render_template("register.html")
+
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -89,8 +90,6 @@ def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     return render_template("profile.html", username=username)
-
-
 
 
 if __name__ == "__main__":

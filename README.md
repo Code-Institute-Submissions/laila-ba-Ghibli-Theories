@@ -26,4 +26,12 @@ Ghibli Theories is a webiste that focuses on bringing Studio Ghibli fans a simpl
   c. As a first time user, i want to find the UI eye-catching, clear and aesthetically pleasing.
   
   - Returning visitor Goals
+
+  a. As a returning visitor, i want to be able to contact the webistes owner for any questions.
+  
+  b. As a returning visitor, i want to be able to manage my own posts either by editing or deleting them.
+  
+  ## Strategy
+  
+  As the creator of this site
   

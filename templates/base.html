@@ -30,17 +30,19 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="{{ url_for("home") }}">HOME</a></li>
+                      {% if session.user %}
                         <li class="nav-item"><a class="nav-link" href="{{ url_for("get_posts") }}">BROWSE</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url_for('profile', username=session['user']) }}">PROFILE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for("logout") }}">LOGOUT</a></li>
+                      {% else %}
                         <li class="nav-item"><a class="nav-link" href="{{ url_for("login") }}" >LOGIN</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url_for("register") }}">REGISTER</a></li>
+                      {% endif %}
                     </ul>
                 </div>
             </div>
         </nav>
       </div>
-
-
 
     <main class="container">
       <section>

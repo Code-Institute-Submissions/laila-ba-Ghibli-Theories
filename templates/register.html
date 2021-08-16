@@ -3,7 +3,7 @@
 
     <div class="login-page">
         <div class="form">
-          <h3 class="center-align">REGISTER</h3>
+          <h3 class="center-align">LOGIN</h3>
     <form class=""register-form"" method="POST" action="{{ url_for('register') }}">
                 <!-- username -->
 						<input id="username" name="username" type="text" minlength="5"
@@ -20,7 +20,7 @@
         <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
                 Register <i class="fas fa-sign-in-alt"></i>
        </button>
-       <p class="message">Already registered? <a href="login.html">Log In</a></p>
+       <p class="message">Already registered? <a href="{{ url_for("login") }}">Log In</a></p>
   </form>
       </div>
     </div>

@@ -16,7 +16,7 @@ Ghibli Theories is a webiste that focuses on bringing Studio Ghibli fans a simpl
   
   d. As a user, i want to have full control of my created posts following computer programming CRUD (create, read, update & delete) operations.
 
-- User Goals
+- First time visitor Goals
 
 
   a. As a first time user, i want to be able to immediately and clearly understand the purpose of the website.
@@ -24,4 +24,6 @@ Ghibli Theories is a webiste that focuses on bringing Studio Ghibli fans a simpl
   b. As a first time user, i want to be able to create an account quickly and securely.
   
   c. As a first time user, i want to find the UI eye-catching, clear and aesthetically pleasing.
+  
+  - Returning visitor Goals
   

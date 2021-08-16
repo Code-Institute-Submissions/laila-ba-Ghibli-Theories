@@ -26,7 +26,7 @@ def home():
 @app.route("/")
 @app.route("/get_posts")
 def get_posts():
-    posts = mongo.db.posts.find()
+    posts = mongo.db.posts.find())
     return render_template("browse.html", posts=posts)
 
 
@@ -51,7 +51,7 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
-    return render_template("register.html")
+        return render_template("register.html")
 
 
 

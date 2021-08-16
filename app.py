@@ -33,6 +33,7 @@ def get_posts():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
+        print("testing")
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
@@ -44,7 +45,6 @@ def register():
         register = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
-            print("testing")
         }
         mongo.db.users.insert_one(register)
 

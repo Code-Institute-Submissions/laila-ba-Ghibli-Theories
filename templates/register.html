@@ -1,10 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="center-align">Register</h3>
-
     <div class="login-page">
         <div class="form">
+          <h3 class="center-align">REGISTER</h3>
     <form class=""register-form"" method="POST" action="{{ url_for('register') }}">
                 <!-- username -->
 						<input id="username" name="username" type="text" minlength="5"
@@ -15,7 +14,7 @@
               <input id="password" name="password" type="password" minlength="5"
                             maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
               <label for="password" placeholder="Password">Password</label>
-         
+
 
         <!-- register -->
         <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">

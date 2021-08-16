@@ -33,5 +33,5 @@ Ghibli Theories is a webiste that focuses on bringing Studio Ghibli fans a simpl
   
   ## Strategy
   
-  As the creator of this site, the main goal is to persuade visitors into registered, active users with the website. In order to do this, there will need to be actions that only registered users are able to carry out. For an example, post and edit their own theories to be a part of the community. The landing page must also play a huge part as it is the first thing the users will come across and ultimately, this 
+  As the creator of this site, the main goal is to convert the visitors into registered, active users with the website. In order to do this, there will need to be actions that only registered users are able to carry out. For an example, post and edit their own theories to be a part of the community. The landing page must also play a huge part as it is the first thing the users will come across and ultimately, draws them in to engage with the wesbite. This will be done using a fun and continuous color scheme with eye-catching images that the first time users will recognise.
   

@@ -18,14 +18,13 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
-                                {% block profile_content %}
+
 
                                 {% for post in posts %}
                                   <p> {{ post.theory_name }}</p>
                                   <p> {{ post.theory_description }}</p>
                                   <p> {{ post.posted_by }}</p>
                                 {% endfor %}
-                                {% endblock %}
                             </div>
                         </div>
                     </div>

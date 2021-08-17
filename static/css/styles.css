@@ -10882,7 +10882,7 @@ hr.divider-light {
 
 #mainNav {
 
-  background-color: transparent;
+  background-color: #fff;
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand img{
@@ -10904,7 +10904,7 @@ hr.divider-light {
 @media (min-width: 992px) {
   .index-nav #mainNav {
     box-shadow: none;
-    background-color: transparent;
+    background-color: #fff;
   }
 
     .login-nav #mainNav {

@@ -6,7 +6,6 @@
         <div class="col-12 p-0 p-sm-4">
             <div class="card">
                 <div class="card-body">
-                    {% if session["user"] == username %}
                     <div class="row">
                         <div class="col-12">
                             <nav class="nav nav-pills nav-justified mt-2">
@@ -16,11 +15,16 @@
                         </div>
                     </div>
                     <hr>
-                    {% endif %}
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
                                 {% block profile_content %}
+
+                                {% for post in posts %}
+                                  <p> {{ post.theory_name }}</p>
+                                  <p> {{ post.theory_description }}</p>
+                                  <p> {{ post.posted_by }}</p>
+                                {% endfor %}
                                 {% endblock %}
                             </div>
                         </div>

@@ -93,9 +93,19 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-@app.route("/add")
+@app.route("/add", methods=["GET", "POST"])
 def add():
-    return render_template("add.html")
+    if request.method == "POST":
+        post = {
+            "theory_name": request.form.get("theory_name"),
+            "theory_description": request.form.get("theory_description"),
+            "created_by": session["user"]
+        }
+        mongo.db.tasks.insert_one(post)
+        flash("Task Successfully Added")
+        return redirect(url_for("get_posts"))
+    else:
+        return redirect(url_for("home"))
 
 
 @app.route("/logout")

@@ -88,7 +88,7 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    posts = list(mongo.db.posts.find({"posted_by": session["user"]}))
+    posts = list(mongo.db.posts.find())
     if session["user"]:
         return render_template("profile.html",posts=posts, username=username)
 

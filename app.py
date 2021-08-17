@@ -90,9 +90,12 @@ def profile(username):
     if session["user"]:
         return render_template("profile.html",posts=posts, username=username)
 
-
-
     return redirect(url_for("login"))
+
+
+@app.route("/add")
+def add():
+    return render_template("add.html")
 
 
 @app.route("/logout")

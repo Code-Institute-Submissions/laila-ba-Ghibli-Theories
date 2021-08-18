@@ -42,9 +42,14 @@ There will also be a 'sneak peek' section where unregistered users will be able 
   Features within the initial design that are most important:
   
   - A fully responsive website, can be viewed on any device.
+  
   - buttons on landing page peruading user to browse theories and register
+  
   - allowing users to create and manage their own accounts
+  
   - registered users can search the site for their desired theory.
+
+  - My site will include sub pages such as: Home, Add, Pofile, login, logout, register
   
 
   

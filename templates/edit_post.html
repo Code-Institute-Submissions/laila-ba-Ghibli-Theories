@@ -7,11 +7,11 @@
   <form class=""register-form"" method="POST" action="{{ url_for('edit_post', post_id=post._id) }}">
 
             <input id="theory_name" name="theory_name" type="text" class="validate" required
-            value="{{ posts.theory_name }}">
+            value="{{ post.theory_name }}">
             <label for="theory_name" placeholder="Theory Name">Theory Name</label>
 
             <input id="theory_description" name="theory_description" type="text" rows="20" class="validate" required>
-            {{- posts.theory_description -}}
+            {{- post.theory_description -}}
             <label for="theory_description" placeholder="Theory Description">Theory Description</label>
 
             <input id="author" name="author" type="text" class="validate" required>

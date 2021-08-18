@@ -101,8 +101,8 @@ def add():
             "theory_description": request.form.get("theory_description"),
             "posted_by": session["user"]
         }
-        mongo.db.tasks.insert_one(post)
-        flash("Task Successfully Added")
+        mongo.db.posts.insert_one(post)
+        flash("Post Successfully Added")
         return redirect(url_for("get_posts"))
 
     theories = mongo.db.posts.find().sort("theory_name", 1)

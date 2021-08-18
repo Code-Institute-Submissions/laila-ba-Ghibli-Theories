@@ -102,6 +102,10 @@
             </div>
         </div>
     </div>
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase">BY GHIBLI COMMUNITY</h2>
+        <hr class="divider" />
+    </div>
     <div class="row">
       {% for post in posts %}
         <div class="col-lg-4 col-md-6">
@@ -112,16 +116,12 @@
                     <h4 class="card-title mb-3 text-center"><em>{{ post.theory_name }}</em></h4>
                     <p class="card-text mb-3"><i class="fas fa-utensils"></i><em>{{ post.theory_description }}</em></p>
                     <p class="card-text mb-3"><i class="fas fa-signature"></i><em>By: {{ post.posted_by }}</em></p>
-                    {% endfor %}
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
   </section>
-  <div class="text-center">
-      <h2 class="section-heading text-uppercase">BY GHIBLI COMMUNITY</h2>
-      <hr class="divider" />
-  </div>
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
           <div class="modal-content">

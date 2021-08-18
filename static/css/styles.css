@@ -653,6 +653,8 @@ progress {
 
 .col {
   flex: 1 0 0%;
+  background-color: #f4623a;
+  margin:1rem;
 }
 
 .row-cols-auto > * {

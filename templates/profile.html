@@ -1,34 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
-
-<h2 class="text-center mt-4 custom-capitalize">{{ username }}'s Profile</h2>
-    <div class="row">
-        <div class="col-12 p-0 p-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-12">
-                                {% set active_tab = request.path %}
-                                <div class="text-center mt-4 custom-capitalize"><a class="nav-item nav-link {% if active_page == url_for('profile', username=session['user']) %}active{% endif %}" href="{{ url_for('profile', username=session['user']) }}">Your Posts</a></div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      {% for post in posts %}
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card bg-primary-color mb-4">
-                                <div class="card-body">
-                                  <a href="" class="btn-small green accent-4">Done</a>
-                                  <a href="{{ url_for('edit_post', post_id=post._id) }}" class="btn-small light-blue lighten-1">Edit</a>
-                                    <h4 class="card-title mb-3 text-center"><em>{{ post.theory_name }}</em></h4>
-                                    <p class="card-text mb-3"><i class="fas fa-utensils"></i><em>{{ post.theory_description }}</em></p>
-                                    <p class="card-text mb-3"><i class="fas fa-signature"></i><em>By: {{ post.posted_by }}</em></p>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
+<div style="background-image: url('static/assets/img/background2.jpg');">
+  <h2 class="text-center mt-4 custom-capitalize">{{ username }}'s Profile</h2>
+      <div class="row">
+          <div class="col-12 p-0 p-sm-4">
+              <div class="card">
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-12">
+                                  {% set active_tab = request.path %}
+                                  <div class="text-center mt-4 custom-capitalize"><a class="nav-item nav-link {% if active_page == url_for('profile', username=session['user']) %}active{% endif %}" href="{{ url_for('profile', username=session['user']) }}">Your Posts</a></div>
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        {% for post in posts %}
+                          <div class="col-lg-4 col-md-6">
+                              <div class="card bg-primary-color mb-4">
+                                  <div class="card-body">
+                                    <a href="" class="btn-small green accent-4">Done</a>
+                                    <a href="{{ url_for('edit_post', post_id=post._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+                                      <h4 class="card-title mb-3 text-center"><em>{{ post.theory_name }}</em></h4>
+                                      <p class="card-text mb-3"><i class="fas fa-utensils"></i><em>{{ post.theory_description }}</em></p>
+                                      <p class="card-text mb-3"><i class="fas fa-signature"></i><em>By: {{ post.posted_by }}</em></p>
+                                      {% endfor %}
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                   </div>
+                </div>
               </div>
             </div>
           </div>

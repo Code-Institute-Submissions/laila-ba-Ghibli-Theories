@@ -105,6 +105,9 @@ def add():
         flash("Task Successfully Added")
         return redirect(url_for("get_posts"))
 
+    theories = mongo.db.posts.find().sort("theory_name", 1)
+    return render_template("add_.html", theories=theories)
+
 
 @app.route("/logout")
 def logout():

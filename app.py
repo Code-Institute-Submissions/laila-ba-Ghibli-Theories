@@ -109,6 +109,12 @@ def add():
     theories = mongo.db.posts.find().sort("theory_name", 1)
     return render_template("add.html", theories=theories)
 
+@app.route("/edit_post/<post_id>", methods=["GET", "POST"])
+def edit_post(post_id):
+    post = mongo.db.posts.find_one({"_id": ObjectId(post_id)})
+    theories = mongo.db.posts.find().sort("theory_name", 1)
+    return render_template("edit_post.html", post=post, theories=theories)
+
 
 @app.route("/logout")
 def logout():

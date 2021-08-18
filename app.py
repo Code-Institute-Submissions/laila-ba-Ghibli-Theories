@@ -99,7 +99,7 @@ def add():
         post = {
             "theory_name": request.form.get("theory_name"),
             "theory_description": request.form.get("theory_description"),
-            "created_by": session["user"]
+            "posted_by": session["user"]
         }
         mongo.db.tasks.insert_one(post)
         flash("Task Successfully Added")

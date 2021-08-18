@@ -10,7 +10,11 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5">Studio Ghibli is known for its cuteness,magic and creativity.But, much like everything else in life, there is a dark side...with some pretty dark theories.<p>
+                        {% if session.user %}
                         <a class="btn btn-primary btn-xl" href="browse.html">BROWSE THEORIES</a>
+                        {% else %}
+                        <a class="btn btn-primary btn-xl" href="register.html">BROWSE THEORIES</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -23,6 +27,9 @@
                         <h2 class="text-white mt-0">JOIN OUR COMMUNITY!</h2>
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">Join the community and stay in the loop with the latest theories on Ghibli films! Become a member and share your theories with others!</p>
+                        {% if session.user %}
+                        <a class="btn btn-light btn-xl" href="register.html">REGISTER NOW!</a>
+                        {% else %}
                         <a class="btn btn-light btn-xl" href="register.html">REGISTER NOW!</a>
                     </div>
                 </div>

@@ -140,7 +140,11 @@
                   <div class="col-lg-8 text-center">
                       <h2 class="text-black mt-0" style="color:black;">WANT TO SEE MORE?</h2>
                       <hr class="divider divider-dark" style="color:black;"/>
-                      <a class="btn btn-light btn-xl" href="register.html">REGISTER NOW!</a>
+                      {% if session.user %}
+                      <a class="btn btn-light btn-xl" href="{{ url_for("register") }}">REGISTER NOW!</a>
+                      {% else %}
+                      <a class="btn btn-light btn-xl" href="{{ url_for("register") }}">REGISTER NOW!</a>
+                      {% endif %}
                   </div>
               </div>
           </div>

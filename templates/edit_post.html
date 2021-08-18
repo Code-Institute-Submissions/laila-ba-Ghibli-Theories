@@ -16,15 +16,20 @@
 
             <input id="author" name="author" type="text" class="validate" required>
             <label for="author" placeholder="Posted By...">Posted by:</label>
-
+  <div class="row">
+    <div class="col"
       <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow"><a href="{{ url_for('profile', username=session['user']) }}" class="btn-large red text-shadow">CANCEL <i class="fas fa-times-circle right"></i></a>
       </button>
+    </div>
+    <div class="col"
       <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
               EDIT <i class="fas fa-sign-in-alt"></i>
      </button>
-  </form>
     </div>
   </div>
+</form>
+  </div>
+</div>
 </div>
 
 

@@ -9,7 +9,14 @@
             <input id="theory_name" name="theory_name" type="text" class="validate" required>
             <label for="theory_name" placeholder="Theory Name">Theory Name</label>
 
-
+            {% for post in posts %}
+                            {% if posts.theory_name == post.theory_name %}
+                                <option value="{{ posts.theory_name }}" selected>{{ post.theory_name }}</option>
+                            {% else %}
+                                <option value="{{ post.theory_name }}">{{ post.theory_name }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    
             <input id="theory_description" name="theory_description" type="text" rows="20" class="validate" required>
             <label for="theory_description" placeholder="Theory Description">Theory Description</label>
 

@@ -10,6 +10,7 @@
                           <div class="col-12">
                                   {% set active_tab = request.path %}
                                   <div class="text-center mt-4 custom-capitalize"><a class="nav-item nav-link {% if active_page == url_for('profile', username=session['user']) %}active{% endif %}" href="{{ url_for('profile', username=session['user']) }}">Your Posts</a></div>
+                                  <div class="text-center mt-4 custom-capitalize"><a class="nav-item nav-link {% if active_page == url_for('add', username=session['user']) %}active{% endif %}" href="{{ url_for('add', username=session['user']) }}">Add Posts</a></div>
                           </div>
                       </div>
                       <hr>

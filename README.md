@@ -36,6 +36,15 @@ Ghibli Theories is a webiste that focuses on bringing Studio Ghibli fans a simpl
   As the creator of this site, the main goal is to convert the visitors into registered, active users with the website. In order to do this, there will need to be actions that only registered users are able to carry out. For an example, post and edit their own theories to be a part of the community. The landing page must also play a huge part as it is the first thing the users will come across and ultimately, draws them in to engage with the wesbite. This will be done using a fun and continuous color scheme with eye-catching images that the first time users will recognise. There will also be a simple yet engaging summary on the landing page that catches the users attention into clicking the browse button and taking a look at the theories. 
  
 There will also be a 'sneak peek' section where unregistered users will be able to see some theories that are deafault with the webiste, however no users posts will appear. This will gain their attention to register so that they can have access to all posts.
+
+  ## Scope
+  
+  Features within the initial design that are most important:
+  
+  - A fully responsive website, can be viewed on any device.
+  - buttons on landing page peruading user to browse theories and register
+  - allowing users to create and manage their own accounts
+  - registered users can search the site for their desired theory.
   
 
   

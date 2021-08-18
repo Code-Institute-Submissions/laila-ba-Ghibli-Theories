@@ -103,7 +103,7 @@ def add():
         }
         mongo.db.posts.insert_one(post)
         flash("Post Successfully Added")
-        return redirect(url_for("get_posts"))
+        return redirect(url_for("profile"))
 
     theories = mongo.db.posts.find().sort("theory_name", 1)
     return render_template("add.html", theories=theories)

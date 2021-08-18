@@ -13,21 +13,26 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="card text-center">
-                      <div class="card-header">
-                        {% for post in posts %}
-                          <p> {{ post.theory_name }}</p>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text"><p> {{ post.theory_description }}</p>
-                      </div>
-                      <div class="card-footer text-muted">
-                        <p> By: {{ post.posted_by }}</p>
-                        {% endfor %}
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              {% for post in posts %}
+                                <p> {{ post.theory_name }}</p>
+                            </h5>
+                            <p class="card-text">
+                              {{ post.theory_description }}
+                            </p>
+                            <p> By: {{ post.posted_by }}</p>
+                            {% endfor %}
+                          </div>
+                        </div>
                       </div>
                     </div>
+                  </div>
                 </div>
             </div>
         </div>
-    </div>
+
 {% endblock %}

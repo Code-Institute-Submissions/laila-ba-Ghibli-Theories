@@ -104,8 +104,6 @@ def add():
         mongo.db.tasks.insert_one(post)
         flash("Task Successfully Added")
         return redirect(url_for("get_posts"))
-    else:
-        return redirect(url_for("home"))
 
 
 @app.route("/logout")

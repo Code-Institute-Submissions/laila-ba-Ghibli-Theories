@@ -49,7 +49,7 @@ There will also be a 'sneak peek' section where unregistered users will be able 
   
   - registered users can search the site for their desired theory.
 
-  - My site will include sub pages such as: Home, Add, Pofile, login, logout, register
+  - My site will include sub pages such as: Home, browse, Add, Pofile, login, logout, register
   
 
   

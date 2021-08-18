@@ -119,8 +119,6 @@ def edit_post(post_id):
         }
         mongo.db.posts.update({"_id": ObjectId(post_id)}, submit)
         flash("Post Successfully Updated!")
-        return redirect(url_for(
-            "profile", username=session["user"]))
 
     post = mongo.db.posts.find_one({"_id": ObjectId(post_id)})
     theories = mongo.db.posts.find().sort("theory_name", 1)

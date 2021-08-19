@@ -1,24 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
 <div style="background-image: url('/static/assets/img/hero3.jpg');">
-  <div class="login-page">
-      <div class="form">
-        <h3 class="center-align">ADD POST</h3>
-  <form class=""register-form"" method="POST" action="{{ url_for('add') }}">
 
-            <input id="theory_name" name="theory_name" placeholder="Theory Name" type="text" class="validate" required>
-            <label for="theory_name" ></label>
-
-
-            <input id="theory_description" name="theory_description" placeholder="Theory Description" type="text" rows="20" class="validate" required>
-            <label for="theory_description" ></label>
-
-
-      <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
-              Post Theory <i class="fas fa-sign-in-alt"></i>
-     </button>
-  </form>
-    </div>
+  <div class="container">
+    <h3 class="center-align">ADD POST</h3>
+    <form class=""register-form"" method="POST" action="{{ url_for('add') }}">
+      <div class="row">
+        <div class="col-25">
+          <input id="theory_name" name="theory_name" placeholder="Theory Name" type="text" class="validate" required>
+          <label for="theory_name" ></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <textarea id="theory_description" name="theory_description" placeholder="Theory Description" style="height:200px" type="text" rows="20" class="validate" required></textarea>
+          <label for="theory_description" ></label>
+        </div>
+      </div>
+      <div class="row">
+        <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
+                Post Theory </button>
+      </div>
+    </form>
   </div>
 </div>
 

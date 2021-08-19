@@ -11130,7 +11130,6 @@ header.masthead h1, header.masthead .h1 {
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
-  width: 500px;
   margin: auto;
 }
 .form {
@@ -11218,8 +11217,8 @@ header.masthead h1, header.masthead .h1 {
 
 
 /* Responsive layout for form */
-@media screen and (max-width: 600px) {
-  .form {
-    max-width: 355px;
+@media screen and (min-width: 522px) {
+  .login-page {
+    width: 500px;
   }
 }

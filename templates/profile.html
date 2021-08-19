@@ -21,7 +21,25 @@
                           <div class="col-lg-4 col-md-6">
                               <div class="card bg-primary-color mb-4">
                                   <div class="card-body">
-                                    <a href="{{ url_for('delete_post', post_id=post._id) }}" class="btn-small" style="background-color:red;">DELETE</a>
+                                    <a href="{{ url_for('delete_post', post_id=post._id) }}" id="removePost" class="btn-small" style="background-color:red;">DELETE</a>
+                                    <div class="modal fade" id="removePost" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title uppercase" id="staticBackdropLabel">Delete Post</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Are you sure you want to delete your post?</p>
+                                                <p>This change cannot be undone!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="modal-btn modal-btn--cancel" data-bs-dismiss="modal">Cancel</button>
+                                                <a href="{{ url_for('delete_post',post_id=post._id ) }}" class="modal-btn modal-btn--delete">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                     <a href="{{ url_for('edit_post', post_id=post._id) }}" class="btn-small" style="background-color:green;">EDIT</a>
                                       <h4 class="card-title mb-3 text-center"><em>{{ post.theory_name }}</em></h4>
                                       <p class="card-text mb-3"><i class="fas fa-utensils"></i><em>{{ post.theory_description }}</em></p>

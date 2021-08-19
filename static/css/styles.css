@@ -3866,6 +3866,10 @@ textarea.form-control-lg {
   color: ##00709c;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  font-family: "Merriweather Sans";
+  text-transform: uppercase;
+  color:#fff;
+  font-weight: 700;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -7298,6 +7302,7 @@ textarea.form-control-lg {
 .text-center {
   text-align: center !important;
   margin-top:2rem;
+  text-transform: uppercase
 }
 
 .text-decoration-none {

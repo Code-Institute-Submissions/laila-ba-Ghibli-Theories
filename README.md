@@ -39,17 +39,48 @@ There will also be a 'sneak peek' section where unregistered users will be able 
 
   ## Scope
   
-  Features within the initial design that are most important:
+  Features within the initial design:
   
   - A fully responsive website, can be viewed on any device.
   
   - buttons on landing page peruading user to browse theories and register
   
   - allowing users to create and manage their own accounts
+    - This includes editing and deleting their posts.
   
-  - registered users can search the site for their desired theory.
+  - registered users can search the browse page for theories.
 
   - My site will include sub pages such as: Home, browse, Add, Pofile, login, logout, register
+    - sub pages such as browse, add, profile and login will only be available to registered users that are signed into their account.
+  
+  - Once a user adds a theory and posts it, it is visible to the community on the browse page.
+
+  - The browse page will include a section for theories posted by the websites creator and another section posted by the community.
+
+  ## Structure
+  
+  The structure of the site will be:
+  
+  ** Navigation Bar **
+  
+    - The navigation bar will be simple and easy to use that turns into a hamburger menu when viewed on small screen.
+    - When the hamburger menu is clicked, i dropdown menu appears with the subpages.
+ 
+ ** Landing Page **
+ 
+    - A vibrant hero image with the webiste name will appear in big bold writing with a short and simple summary bellow. A button will be placed bellow for 'Browse Theories' to      allow easy naviagtion. For unregistered users, this takes them to the register page and for registered users, this takes them to the browse page.
+    
+    - Below the hero image, a small section will appear with the title 'join the community' and a register button, again, for easy navigation while making the signing up process       easy and simple for the user.
+    
+    - There will be a 'sneak peak' section with a small amount of theories that draws new users to the site and allows them to see what the wesbite is all about. The theories         that appear in this section are posted by the webistes creator.
+      - When these are clicked on, a larger page appears with an enlarged image and text for the user to easily read. There is a close icon at the top of the page and a close          button at the button.
+      
+    - Underneath this area, there is a small section with the title of 'want to see more?' that redirects users to the register page. The redirects to the register page persuade      the user to signup to have full access of the webiste without any hassle.
+    
+  ** Browse Page **
+  
+  - 
+  
   
 
   

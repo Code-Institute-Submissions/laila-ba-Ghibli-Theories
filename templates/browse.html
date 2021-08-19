@@ -3,25 +3,16 @@
   <section class="page-section" id="services">
       <div class="container px-4 px-lg-5">
 
-        <div class="container pb-5">
-                    <div class="row mb-5">
-                        <form action="{{ url_for('search') }}" method="POST" class="search-form">
-                            <div class="row">
-                                <div class="col-4 search-box">
-                                    <button type="button" class="btn-search"><i class="fas fa-search"></i></button>
-                                    <label for="query"></label>
-                                    <input class="input-search mb-3" name="query" id="query" type="text" placeholder="Search Posts" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-12">
-                                  <a href="{{ url_for('get_posts') }}" class="clear-btn">Clear</a>
-                                  <button type="submit" role="button" aria-roledescription="search button" class="search-btn">Search</button>
-                              </div>
-                          </div>
-                      </form>
-                </div>
-          </div>
+        <div class="input-group">
+          <form action="{{ url_for('search') }}" method="post" class="col s12">
+              <input type="text" name="query" id="query class="validate" placeholder="Search" aria-label="Search"
+                aria-describedby="search-addon" />
+                <a href="{{ url_for('get_posts') }}" class="btn btn-outline-primary">Reset</a>
+              <button type="submit" class="btn btn-outline-primary">search</button>
+          </form>
+        </div>
+
+        
           <div class="text-center">
               <h2 class="section-heading text-uppercase">BY GHIBLI COMMUNITY</h2>
               <hr class="divider" />

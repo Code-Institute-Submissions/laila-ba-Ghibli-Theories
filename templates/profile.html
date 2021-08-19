@@ -21,7 +21,7 @@
                           <div class="col-lg-4 col-md-6">
                               <div class="card bg-primary-color mb-4">
                                   <div class="card-body">
-                                    <a href="{{ url_for('delete_post', post_id=post._id) }}" id="removePost" class="btn-small" style="background-color:red;">DELETE</a>
+                                    <a href="{{ url_for('delete_post', post_id=post._id) }}" class="btn-small" style="background-color:red;" data-bs-toggle="modal" data-bs-target="#removePost">DELETE</a>
                                     <div class="modal fade" id="removePost" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">

@@ -132,6 +132,13 @@ def delete_post(post_id):
         "profile", username=session["user"]))
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    posts = list(mongo.db.posts.find({"$text": {"$search": query}}))
+    return render_template("browse.html", posts=posts)
+
+
 @app.route("/logout")
 def logout():
     # remove user from session cookie

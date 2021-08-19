@@ -127,7 +127,7 @@ def edit_post(post_id):
 @app.route("/delete_post/<post_id>")
 def delete_post(post_id):
     mongo.db.posts.remove({"_id": ObjectId(post_id)})
-    flash("Postk Successfully Deleted")
+    flash("Post Successfully Deleted")
     return redirect(url_for(
         "profile", username=session["user"]))
 

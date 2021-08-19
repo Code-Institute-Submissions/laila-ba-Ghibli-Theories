@@ -4,7 +4,7 @@
   <div class="login-page">
       <div class="form">
         <h3 class="center-align">EDIT POST</h3>
-  <form class=""register-form"" method="POST" action="{{ url_for('edit_post', post_id=post._id) }}">
+  <form class="register-form" method="POST" action="{{ url_for('edit_post', post_id=post._id) }}">
 
             <input id="theory_name" name="theory_name" type="text" class="validate" required
             value="{{ post.theory_name }}">
@@ -17,11 +17,11 @@
             <input id="author" name="author" type="text" class="validate" required>
             <label for="author" placeholder="Posted By...">Posted by:</label>
   <div class="row">
-    <div class="col"
+    <div class="col">
       <button type="submit"><a href="{{ url_for('profile', username=session['user']) }}">CANCEL</a>
       </button>
     </div>
-    <div class="col"
+    <div class="col">
       <button type="submit">EDIT</button>
     </div>
   </div>

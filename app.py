@@ -124,6 +124,13 @@ def edit_post(post_id):
     theories = mongo.db.posts.find().sort("theory_name", 1)
     return render_template("edit_post.html", post=post, theories=theories)
 
+@app.route("/delete_post/<post_id>")
+def delete_post(post_id):
+    mongo.db.posts.remove({"_id": ObjectId(post_id)})
+    flash("Postk Successfully Deleted")
+    return redirect(url_for(
+        "profile", username=session["user"]))
+
 
 @app.route("/logout")
 def logout():

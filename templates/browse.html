@@ -3,141 +3,142 @@
   <section class="page-section" id="services">
       <div class="container px-4 px-lg-5">
 
-        <div class="row card-panel grey lighten-5">
-            <form action="{{ url_for('search') }}" method="post" class="col s12">
-                <div class="row valign-wrapper center-align">
-                    <div class="input-field col s12 m8">
-                        <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
-                        <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                        <label for="query">Search Posts</label>
-                    </div>
-                    <div class="col s12 m4">
-                        <a href="{{ url_for('get_posts') }}" class="red btn text-shadow">Reset</a>
-                        <button type="submit" class="light-blue darken-1 btn text-shadow">
-                            <i class="fas fa-search left"></i> Search
-                        </button>
-                    </div>
+        <div class="container pb-5">
+                    <div class="row mb-5">
+                        <form action="{{ url_for('search') }}" method="POST" class="search-form">
+                            <div class="row">
+                                <div class="col-4 search-box">
+                                    <button type="button" class="btn-search"><i class="fas fa-search"></i></button>
+                                    <label for="query"></label>
+                                    <input class="input-search mb-3" name="query" id="query" type="text" placeholder="Search Posts" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12">
+                                  <a href="{{ url_for('get_posts') }}" class="clear-btn">Clear</a>
+                                  <button type="submit" role="button" aria-roledescription="search button" class="search-btn">Search</button>
+                              </div>
+                          </div>
+                      </form>
                 </div>
-            </form>
-        </div>
-
-          <section class="page-section bg-light" id="portfolio">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">BY GHIBLI THEORIES</h2>
-            <hr class="divider" />
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 1-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/1.jpg') }}" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">SPIRITED AWAY</div>
-                        <div class="portfolio-caption-subheading text-muted">Yubaba's Brothel</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 2-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/2.jpg') }}" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">MY NEIGHBOR TOTORO</div>
-                        <div class="portfolio-caption-subheading text-muted">Totoro Is Inspired By The Sayama Incident</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 3-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/3.jpg') }}" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">PRINCESS MONONOKE</div>
-                        <div class="portfolio-caption-subheading text-muted">San Wears Her Sister's Skin</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 4-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/4.jpg') }}" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">MY NEIGHBOR TOTORO</div>
-                        <div class="portfolio-caption-subheading text-muted">Totoro Is The God Of Death</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 5-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/5.jpg') }}" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">WHISPER OF THE HEART</div>
-                        <div class="portfolio-caption-subheading text-muted">Suicides</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 6-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/6.jpg') }}" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">PONYO</div>
-                        <div class="portfolio-caption-subheading text-muted">Afterlife At The End Of Ponyo</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="text-center">
-        <h2 class="section-heading text-uppercase">BY GHIBLI COMMUNITY</h2>
-        <hr class="divider" />
-    </div>
-    <div class="row">
-      {% for post in posts %}
-        <div class="col-lg-4 col-md-6">
-            <div class="card bg-primary-color mb-4">
-                <div class="card-body">
-                    <h4 class="card-title mb-3 text-center"><em>{{ post.theory_name }}</em></h4>
-                    <p class="card-text mb-3"><i class="fas fa-utensils"></i><em>{{ post.theory_description }}</em></p>
-                    <p class="card-text mb-3"><i class="fas fa-signature"></i><em>By: {{ post.posted_by }}</em></p>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-  </section>
+          </div>
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase">BY GHIBLI COMMUNITY</h2>
+              <hr class="divider" />
+          </div>
+          <div class="row">
+            {% for post in posts %}
+              <div class="col-lg-4 col-md-6">
+                  <div class="card bg-primary-color mb-4">
+                      <div class="card-body">
+                          <h4 class="card-title mb-3 text-center"><em>{{ post.theory_name }}</em></h4>
+                          <p class="card-text mb-3"><i class="fas fa-utensils"></i><em>{{ post.theory_description }}</em></p>
+                          <p class="card-text mb-3"><i class="fas fa-signature"></i><em>By: {{ post.posted_by }}</em></p>
+                      </div>
+                  </div>
+              </div>
+              <section class="page-section bg-light" id="portfolio">
+              <div class="container">
+                  <div class="text-center">
+                      <h2 class="section-heading text-uppercase">BY GHIBLI THEORIES</h2>
+                      <hr class="divider" />
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                          <!-- Portfolio item 1-->
+                          <div class="portfolio-item">
+                              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                  <div class="portfolio-hover">
+                                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                  </div>
+                                  <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/1.jpg') }}" alt="..." />
+                              </a>
+                              <div class="portfolio-caption">
+                                  <div class="portfolio-caption-heading">SPIRITED AWAY</div>
+                                  <div class="portfolio-caption-subheading text-muted">Yubaba's Brothel</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                          <!-- Portfolio item 2-->
+                          <div class="portfolio-item">
+                              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                  <div class="portfolio-hover">
+                                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                  </div>
+                                  <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/2.jpg') }}" alt="..." />
+                              </a>
+                              <div class="portfolio-caption">
+                                  <div class="portfolio-caption-heading">MY NEIGHBOR TOTORO</div>
+                                  <div class="portfolio-caption-subheading text-muted">Totoro Is Inspired By The Sayama Incident</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                          <!-- Portfolio item 3-->
+                          <div class="portfolio-item">
+                              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                  <div class="portfolio-hover">
+                                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                  </div>
+                                  <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/3.jpg') }}" alt="..." />
+                              </a>
+                              <div class="portfolio-caption">
+                                  <div class="portfolio-caption-heading">PRINCESS MONONOKE</div>
+                                  <div class="portfolio-caption-subheading text-muted">San Wears Her Sister's Skin</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                          <!-- Portfolio item 4-->
+                          <div class="portfolio-item">
+                              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                  <div class="portfolio-hover">
+                                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                  </div>
+                                  <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/4.jpg') }}" alt="..." />
+                              </a>
+                              <div class="portfolio-caption">
+                                  <div class="portfolio-caption-heading">MY NEIGHBOR TOTORO</div>
+                                  <div class="portfolio-caption-subheading text-muted">Totoro Is The God Of Death</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                          <!-- Portfolio item 5-->
+                          <div class="portfolio-item">
+                              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                  <div class="portfolio-hover">
+                                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                  </div>
+                                  <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/5.jpg') }}" alt="..." />
+                              </a>
+                              <div class="portfolio-caption">
+                                  <div class="portfolio-caption-heading">WHISPER OF THE HEART</div>
+                                  <div class="portfolio-caption-subheading text-muted">Suicides</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                          <!-- Portfolio item 6-->
+                          <div class="portfolio-item">
+                              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                  <div class="portfolio-hover">
+                                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                  </div>
+                                  <img class="img-fluid" src="{{ url_for('static', filename='assets/img/films/fullsize/6.jpg') }}" alt="..." />
+                              </a>
+                              <div class="portfolio-caption">
+                                  <div class="portfolio-caption-heading">PONYO</div>
+                                  <div class="portfolio-caption-subheading text-muted">Afterlife At The End Of Ponyo</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                  {% endfor %}
+              </div>
+            </section>
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
           <div class="modal-content">

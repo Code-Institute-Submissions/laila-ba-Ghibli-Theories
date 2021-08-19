@@ -7194,6 +7194,8 @@ textarea.form-control-lg {
 .btn-small {
     margin: 5px;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #1d438a;
 
 }
 .ps-2 {

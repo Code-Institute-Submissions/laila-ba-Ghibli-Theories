@@ -6,16 +6,16 @@
         <h3 class="center-align">EDIT POST</h3>
   <form class=""register-form"" method="POST" action="{{ url_for('edit_post', post_id=post._id) }}">
 
-            <input id="theory_name" name="theory_name" type="text" class="validate" required
+            <input id="theory_name" name="theory_name" type="text" placeholder="Theory Name class="validate" required
             value="{{ post.theory_name }}">
-            <label for="theory_name" placeholder="Theory Name">Theory Name</label>
+            <label for="theory_name"></label>
 
-            <input id="theory_description" name="theory_description" type="text" rows="20" class="validate" required
+            <input id="theory_description" name="theory_description" placeholder="Theory Description" type="text" rows="20" class="validate" required
             value="{{ post.theory_description }}">
-            <label for="theory_description" placeholder="Theory Description">Theory Description</label>
+            <label for="theory_description" ></label>
 
-            <input id="author" name="author" type="text" class="validate" required>
-            <label for="author" placeholder="Posted By...">Posted by:</label>
+            <input id="author" name="author" type="text" placeholder="Posted By..." class="validate" required>
+            <label for="author"></label>
   <div class="row">
     <div class="col">
       <button type="submit"><a href="{{ url_for('profile', username=session['user']) }}">CANCEL</a>

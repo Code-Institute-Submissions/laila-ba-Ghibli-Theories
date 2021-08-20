@@ -1085,6 +1085,8 @@ progress {
   .col-sm-6 {
     flex: 0 0 auto;
     width: 50%;
+    padding-left:1rem;
+    padding-right:1rem;
   }
 
   .col-sm-7 {

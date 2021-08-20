@@ -2206,7 +2206,6 @@ progress {
           margin-inline-end: 0.75rem;
   color: #212529;
   background-color: #e9ecef;
-  pointer-events: none;
   border-color: inherit;
   border-style: solid;
   border-width: 0;
@@ -7417,6 +7416,7 @@ textarea.form-control-lg {
 
 .bg-light {
   background-color: #f8f9fa !important;
+  margin-top:2rem;
 }
 
 .bg-dark {

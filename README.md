@@ -61,34 +61,39 @@ There will also be a 'sneak peek' section where unregistered users will be able 
   
   The structure of the site will be:
   
-  ** Navigation Bar **
+  ### Navigation Bar 
   
-    - The navigation bar will be simple and easy to use that turns into a hamburger menu when viewed on small screen.
-    - When the hamburger menu is clicked, i dropdown menu appears with the subpages.
+   - The navigation bar will be simple and easy to use that turns into a hamburger menu when viewed on small screen.
+   - When the hamburger menu is clicked, i dropdown menu appears with the subpages.
  
- ** Landing Page **
+ ### Landing Page 
  
-    - A vibrant hero image with the webiste name will appear in big bold writing with a short and simple summary bellow. A button will be placed bellow for 'Browse Theories' to      allow easy naviagtion. For unregistered users, this takes them to the register page and for registered users, this takes them to the browse page.
+   - A vibrant hero image with the webiste name will appear in big bold writing with a short and simple summary bellow. A button will be placed bellow for 'Browse Theories' to      allow easy naviagtion. For unregistered users, this takes them to the register page and for registered users, this takes them to the browse page.
     
-    - Below the hero image, a small section will appear with the title 'join the community' and a register button, again, for easy navigation while making the signing up process       easy and simple for the user.
+   - Below the hero image, a small section will appear with the title 'join the community' and a register button, again, for easy navigation while making the signing up process       easy and simple for the user.
     
-    - There will be a 'sneak peak' section with a small amount of theories that draws new users to the site and allows them to see what the wesbite is all about. The theories         that appear in this section are posted by the webistes creator.
-      - When these are clicked on, a larger page appears with an enlarged image and text for the user to easily read. There is a close icon at the top of the page and a close          button at the button.
+   - There will be a 'sneak peak' section with a small amount of theories that draws new users to the site and allows them to see what the wesbite is all about. The theories         that appear in this section are posted by the webistes creator.
+     - When these are clicked on, a larger page appears with an enlarged image and text for the user to easily read. There is a close icon at the top of the page and a close          button at the button.
       
-    - Underneath this area, there is a small section with the title of 'want to see more?' that redirects users to the register page. The redirects to the register page persuade      the user to signup to have full access of the webiste without any hassle.
+   - Underneath this area, there is a small section with the title of 'want to see more?' that redirects users to the register page. The redirects to the register page persuade      the user to signup to have full access of the webiste without any hassle.
     
-  ** Browse Page **
+  ### Browse Page 
   
   - At the top of the browse page, there will be a search bar which will enable the user to search through the communities posts, the results will be filtered through the theory     names and descriptions. 
   - section bellow will be the theories that are posted by the webistes creator which have a clear difference in styling.
 
-* Login, register, add post, edit post *
+### Login, register, add post, edit post 
 
   - These pages that are using forms will have only the forms as content in order for that to be the main focus point.
 
-* Profile *
+### Profile 
 
   - The profile page will show the users username along side their posts while also giving them an option to add a post. Each of their posts will have an option to edit and         delete. If the user chooses to delete the post, a modal pop appears asking the user again if they want to delete. This is added for precaution just in case the user has clicked delete by accident .
+
+## Mockups
+
+[Desktop webiste view](https://link-url-here.org)
+[Mobile webiste view](https://link-url-here.org)
   
   
 

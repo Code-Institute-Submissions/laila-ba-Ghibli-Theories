@@ -79,7 +79,16 @@ There will also be a 'sneak peek' section where unregistered users will be able 
     
   ** Browse Page **
   
-  - 
+  - At the top of the browse page, there will be a search bar which will enable the user to search through the communities posts, the results will be filtered through the theory     names and descriptions. 
+  - section bellow will be the theories that are posted by the webistes creator which have a clear difference in styling.
+
+* Login, register, add post, edit post *
+
+  - These pages that are using forms will have only the forms as content in order for that to be the main focus point.
+
+* Profile *
+
+  - The profile page will show the users username along side their posts while also giving them an option to add a post. Each of their posts will have an option to edit and         delete. If the user chooses to delete the post, a modal pop appears asking the user again if they want to delete. This is added for precaution just in case the user has clicked delete by accident .
   
   
 

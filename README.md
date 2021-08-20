@@ -1,5 +1,7 @@
 # Ghibli Theories
 
+![Untitled](https://user-images.githubusercontent.com/75024926/130273638-6c406986-ad01-4d31-a128-f7939f44728c.png)
+
 
 ## Overview
 
@@ -7,29 +9,19 @@ Ghibli Theories is a webiste that focuses on bringing Studio Ghibli fans a simpl
 
 ## User Stories
 - User Goals
-
-  a. As a user, i want to be able to access the site from any device.
   
-  b. As a user, i want to find using the website's functionality simple with clear instructions.
+  a. As a user, i want to find using the website's functionality simple with clear instructions.
   
-  c. As a user, i want to have full control over my account following computer programming CRUD (create, read, update & delete) operations.
-  
-  d. As a user, i want to have full control of my created posts following computer programming CRUD (create, read, update & delete) operations.
+  b. As a user, i want to have full control of my created posts following computer programming CRUD (create, read, update & delete) operations.
 
 - First time visitor Goals
-
-
-  a. As a first time user, i want to be able to immediately and clearly understand the purpose of the website.
   
-  b. As a first time user, i want to be able to create an account quickly and securely.
-  
-  c. As a first time user, i want to find the UI eye-catching, clear and aesthetically pleasing.
+  a. As a first time user, i want to be able to create an account quickly and securely.
   
   - Returning visitor Goals
 
   a. As a returning visitor, i want to be able to serach the site for theory that i want.
-  
-  b. As a returning visitor, i want to be able to manage my own posts either by editing or deleting them.
+ 
   
   ## Strategy
   
@@ -59,12 +51,10 @@ There will also be a 'sneak peek' section where unregistered users will be able 
 
   ## Structure
   
-  The structure of the site will be:
-  
   #### Navigation Bar 
   
    - The navigation bar will be simple and easy to use that turns into a hamburger menu when viewed on small screen.
-   - When the hamburger menu is clicked, i dropdown menu appears with the subpages.
+   - When the hamburger menu is clicked, a dropdown menu appears with the subpages. When the dropdown menu appears, the content bellow moves down allowing no content to be            hidden underneath the navigation bar.
  
  #### Landing Page 
  
@@ -79,16 +69,24 @@ There will also be a 'sneak peek' section where unregistered users will be able 
     
   #### Browse Page 
   
-  - At the top of the browse page, there will be a search bar which will enable the user to search through the communities posts, the results will be filtered through the theory     names and descriptions. 
-  - section bellow will be the theories that are posted by the webistes creator which have a clear difference in styling.
+  - At the top of the browse page, there will be a search bar which will enable the user to search through the communities posts, the results will be filtered through the theory     names and descriptions. Besides this is a 'clear' button allowing the search bar and results to be reset. 
+  - section bellow will be the theories that are posted by the webiste's creator which have a clear difference in styling.
+  - When viewed on mobile, The posts appear on top of eachother rather than besides eachother, making it easier and more efficient to view on smaller devices.
+  - The browse page is only visible to registered users so that posts are only seen within the community.
 
 #### Login, register, add post, edit post 
 
-  - These pages that are using forms will have only the forms as content in order for that to be the main focus point.
+  - The forms used on these pages are all the same, keeping the same aesthetic throughout the webiste.
+  - The add and edit forms can be only be accessed by registered users.
+
+#### 404
+
+- A custom 404 error page for when a user tries to access a page that doesnt fit their current state. e.g: the user attempts to register while being logged in. The 404 page has a link that takes them back to the home page and an image that fits well with the aesthetic of the webisite.
 
 #### Profile 
 
-  - The profile page will show the users username along side their posts while also giving them an option to add a post. Each of their posts will have an option to edit and         delete. If the user chooses to delete the post, a modal pop appears asking the user again if they want to delete. This is added for precaution just in case the user has clicked delete by accident .
+  - The profile page will show the users username along side their posts while also giving them an option to add a post. Each of their posts will have an option to edit and         delete. If the user chooses to delete the post, a modal pop appears asking the user again if they want to delete. This is added for precaution just in case the user has clicked delete by accident . The profile page follows CRUD operations as it allows users to add, edit and delete their posts easily. Once posts are deleted, they are also removed from the browse section and will no longer be visible to the community
+  - When posts are added, edited or deleted, flash messages will appear letting the user know that it has been successful
 
 ## Mockups
 
@@ -123,6 +121,168 @@ The logo for this project was designed and created by myself while using Adobe I
 For this project i chose to use MongoDB for all database aspects in order to become more familar with it through practise and development.MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time.
 
 - Using 12-bit-MongoDB-specific unique values such as ObjectId's can be used to identify objects within the Database as it is used by MongoDB to search for a specific ObjectID.This is used within my project in order for my site to run smoothly, allowing users to manage their data.
+
+![database model](https://user-images.githubusercontent.com/75024926/130251989-16ea9f50-c077-48b8-b79a-80f0abd5940f.png)
+
+Above, we have the posts collection that contains a users post when added and the users collection, containing login info. Within both collections, the ObjectID is present so that the data can be manipulated and the DB can be searched.
+
+## Future Features
+
+- Add like and dislike buttons to users posts, allowing the community to engage with one another
+- Added a newletter signup that would send registered users the latest theories by emailJS
+
+## Technologies Used 
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  * This is used a the base of the code. It structures the code and acts as the main building block
+
+* [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
+  * This allows styling to be added to the project.
+
+* [Hover.css](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover)
+  * Hover effect used for the social icons, navbar, and portfolio.
+
+* [Bootstrap](https://getbootstrap.com/L)
+  * A framework to make the project responsive
+
+* [jQuery](https://jquery.com/)
+  * A framework used with Javascript
+
+* [Font Awesome](https://fontawesome.com/)
+  * Used to obtain icons used for the footer and contact page.
+
+* [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+  * Used to help debug the code and help find syntax errors.
+
+* [Github](https://github.com/)
+  * Used to push and store the code.
+
+* [Atom](https://atom.io/)
+  * Used as the IDE and the development environment for writing the code.
+
+* [JS validator](https://jshint.com/)
+  * Used as a JS validator
+
+* [HTML validator](https://validator.w3.org/)
+  * Used as a HTML validator
+  
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+  * Used as a CSS validator
+
+* [Grammarly](https://www.grammarly.com/)
+  * Used to check and correct grammatical errors across the project.
+
+* [Python Validator](https://extendsclass.com/python-tester.html)
+  * Used as a python validator
+  
+* [Canva](https://www.canva.com/)
+  * Used to create mockups 
+
+* [am i responsive](http://ami.responsivedesign.is/#)
+  * A site used to see if my project is responsive
+
+* [jinja](https://jinja.palletsprojects.com/en/3.0.x/)
+  * A web template engine for python.
+
+* [PyMongo](https://pymongo.readthedocs.io/en/stable/)
+  * A python distribution containing tools for working with MongoDb
+
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+  * A micro web framework written in python
+
+* [heroku](https://en.wikipedia.org/wiki/Heroku)
+  * A cloud platform service supporting numerous languages
+
+* [MongoDB](https://www.mongodb.com/)
+  * The database platform used for this project.
+
+## Testing
+
+  #### HTML Validation 
+  
+  Once i had finished the code for the project and put the URL into the validators, these were the main errors that appeared and how i resolved them:
+  
+   - "A slash was not immediately followed by >"
+       " alt="close"//></div>↩"    
+       - This was shown on multiple lines that had the img src for the close icon. I resolved this by removing the extra '/' on every line.
+        - There were no other errors present
+
+ #### CSS Validation 
+ 
+  - Value Error : color Lexical error at line 3880, column 11. Encountered: "#" (35), after : "#" #00709c;
+     
+     - These errors were shown on multiple lines for extra hashtags for colour codes. I resolved this by removing the extra tags.
+      - There were no other errors present
+
+#### JS Validation 
+
+  - The main errors i recieved were missing or unessesary semi colons which were resolved by adding and removing them.
+    - There were no other errors present
+
+#### Python Validation
+
+  - There were no other errors present
+
+## User Story Testing 
+
+"As a user, i want to find using the website's functionality simple and easy to use."
+
+  - Users a greeted with a short and simple summary on the landing page with a link to the browse page. Through the summary, they are able to understand immediately what the         site's focus is.
+  
+   ![objectID2](https://user-images.githubusercontent.com/75024926/130268776-5a903380-b7c3-4101-a4b3-966c608b3180.png)
+   
+   - Form input fields are clear and simple to proceed to fill it in. Users can post theories easily without hassle.
+   
+  ![objectID2](https://user-images.githubusercontent.com/75024926/130270215-aab87839-9656-47df-bb28-46d721948d6f.png)
+  
+   "As a user, i want to have full control of my created posts following computer programming CRUD (create, read, update & delete) operations."
+    
+   - Users have full control of their posts as they can create, read, update and delete. My project has implemented CRUD functionality in order for the user to manage their posts.
+   ![Untitled](https://user-images.githubusercontent.com/75024926/130270915-20d24c32-9b00-485b-b205-bdc5628be3bf.png)
+   ![Untitled](https://user-images.githubusercontent.com/75024926/130271151-388f0bb2-ea3b-442f-af56-4fd5475b3818.png)
+
+   
+   - On a users profile, they have a button that allows them to add posts as well as having and edit and delete button besides all of their posted theories.
+
+### First Time visitor goals 
+
+ "As a first time user, i want to be able to create an account quickly and securely."
+ 
+  - Upon arriving to the site, a browse button is just bellow the hero summary which either takes registered users to the browse page, or new visitors to the registration page.    This allows users to easily become members without any hassle.
+  - Also, the navigation bar has a link to the registration page which is a simple form for the user to fill out, once completed, they are taken to their profile page.
+  
+  ![Untitled](https://user-images.githubusercontent.com/75024926/130271854-d8aa4296-972e-4f23-a609-ec0a6ca35703.png)
+  ![Untitled](https://user-images.githubusercontent.com/75024926/130271935-dbfb1123-1b18-4fb9-824e-1efbdb8839a9.png)
+  
+  ### Returning visitor goals 
+  
+  "As a returning visitor, i want to be able to serach the site for theory that i want."
+  
+  - Once a user has logged in, either through the navigation bar or on the landing page, their are links to take them to the browse page. At the top of the page, a search bar is visible mand they are able to search through the community posts. The results are filtered through the theory name and description.
+
+![Untitled](https://user-images.githubusercontent.com/75024926/130273811-4d4db323-5282-45d6-b605-f348191f0dd5.png)
+
+  ### Accessibilty
+  
+  [Screenshots from Google Lighthouse's accessibility checker can be viewed here]()
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+  
   
 
   

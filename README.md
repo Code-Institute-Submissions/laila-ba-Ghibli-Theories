@@ -92,8 +92,8 @@ There will also be a 'sneak peek' section where unregistered users will be able 
 
 ## Mockups
 
-[Desktop webiste view](https://link-url-here.org)
-[Mobile webiste view](https://link-url-here.org)
+[Desktop webiste view](https://github.com/laila-ba/Ghibli-Theories/blob/main/mockups/desktop%20view.pdf)
+[Mobile webiste view](https://github.com/laila-ba/Ghibli-Theories/blob/main/mockups/mobile%20view.pdf)
   
   
 

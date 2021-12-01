@@ -38,9 +38,11 @@ Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simpl
   
   # Design
 
-  ### Color Scheme
+  ## Color Scheme
 
-- The color scheme for this website evolves around the hero image on the landing page. It contains tones of royal blue and orange. Throughout the whole site, I have chosen to use dark blue, orange, and green. These fun colors stand out nicely against white backgrounds without appearing too much on the eye. They also portray the fun and magical feel that the Ghibli films offer to their fans.
+- I wanted to create a fun and colorful color scheme,which co ordinates with Ghibli films, while still keeping the site looking simplistic and clean. Because of this, i chose to stick to only two main colors that are based on the hero image on the landing page. It contains tones of royal blue and orange. Throughout the whole site, I have chosen to use dark blue, orange, and green. These fun colors stand out nicely against white backgrounds without appearing too much on the eye. They also portray the fun and magical feel that the Ghibli films offer to their fans.
+
+  <img src="readme-docs/color-scheme.png">
 
 - Dark navy blue (#1d438a) - This is one of the main primary colors of the site used alongside orange. It goes well with the website as it carries on the deep-sea theme that the hero image on the landing page conveys. It is used for: banners of information and image titles for ghibli posts.
 
@@ -48,16 +50,14 @@ Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simpl
 
 - Green (#008000) and Red(#ff0000)- A hint of green and red are used on the profile page for the edit and delete buttons to stand out to the user as both buttons allow the user to manage their data.
 
-#### Typography
+## Typography
  There are two fonts used throughout the site: "Merriweather" and "Merriweather-Sans"
+
+  <img src="readme-docs/typography.png">
  
  - I wanted to use a combination of two fonts to not make the site boring and plain. "Merriweather-Sans" I used for big title texts and buttons as it's slightly thicker and bolder, whereas "Merriweather" is used for the text on posts and larger quantities of information.
 
-#### Logo
-
-The logo for this project was designed and created by myself while using Adobe Illustrator. I wanted to implement the Striking orange color from the hero image as it would contrast well against the white navigation bar. I wanted to keep the logo simple, with no text to keep a clean and sleek aesthetic.
-
-#### Imagery
+## Imagery
 
 - Images appear the most on the landing page to attract and show the site's visitors what the focus of the website is. Using high-quality images from Ghibli films keeps the ghibli aesthetic strong and attracts more users to the site, ultimately converting them into registered, active users. Images such as the hero image are used on the landing page, log in, logout, add and edit pages to keep the pages exciting and not bland.
 

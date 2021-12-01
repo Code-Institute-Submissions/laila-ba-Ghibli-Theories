@@ -3,31 +3,65 @@
 ![Untitled](https://user-images.githubusercontent.com/75024926/130273638-6c406986-ad01-4d31-a128-f7939f44728c.png)
 
 
-## Overview
+# About
 
 Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simple and easy platform to share and learn about new Ghibli-based theories. Its main purpose is to keep fans up to date with the latest news and stories while allowing users to post, edit and delete their posts. 
 
-## User Stories
-- User Goals
+# User Experience
+## User stories
+- Common User Stories
   
-  a. As a user, I want to find using the website's functionality simple with clear instructions.
-  
-  b. As a user, I want to have full control of my created posts following computer programming CRUD (create, read, update & delete) operations.
+  a. I want to find using the website's functionality simple with clear clear navigation.
+
+  b. I want the site to be responsive on all screen sizes.
 
 - First-time visitor Goals
   
-  a. As a first-time user, I want to be able to create an account quickly and securely.
-  
-  - Returning visitor Goals
+  a. I want to be able to create an account quickly and securely.
 
-  a. As a returning visitor, I want to be able to search the site for a theory that I want.
+  b. I want to be able to find the 'Register' page easily.
+  
+- Returning visitor Goals
+
+  a. I want to be able to search the site for the theory that I want.
+  
+  b. I want to be able to navigate to the 'Login' page easily.
+
+  c. I want to post new theories easily.
+
+  d. I want to have full control of my created posts following computer programming CRUD (create, read, update & delete) operations.
+
+  e. I want to view all posts that were created by me.
+
+  f. I want to be able to Log out.
  
   
-  ## Strategy
-  
-  As the creator of this site, the main goal is to convert the visitors into registered, active users of the website. To do this, there will need to be actions that only registered users can carry out. For example, post and edit their theories to be a part of the community. The landing page must also play a huge part as it is the first thing the users will come across and ultimately, draws them in to engage with the website. This will be done using fun and continuous color scheme with eye-catching images that the first-time users will recognize. There will also be a simple yet engaging summary on the landing page that catches the user's attention by clicking the browse button and taking a look at the theories. 
+  # Design
+
+  ### Color Scheme
+
+- The color scheme for this website evolves around the hero image on the landing page. It contains tones of royal blue and orange. Throughout the whole site, I have chosen to use dark blue, orange, and green. These fun colors stand out nicely against white backgrounds without appearing too much on the eye. They also portray the fun and magical feel that the Ghibli films offer to their fans.
+
+- Dark navy blue (#1d438a) - This is one of the main primary colors of the site used alongside orange. It goes well with the website as it carries on the deep-sea theme that the hero image on the landing page conveys. It is used for: banners of information and image titles for ghibli posts.
+
+- Coral Orange (#f4623a)- Taken from the hero image, this coral color is adapted a lot more throughout the site, being the primary color across the project. The contrast between blue and orange works nicely and goes hand in hand. It's used for: the logo, dividers underneath titles, URL buttons, hovering over nav sub-pages, and community post titles
+
+- Green (#008000) and Red(#ff0000)- A hint of green and red are used on the profile page for the edit and delete buttons to stand out to the user as both buttons allow the user to manage their data.
+
+#### Typography
+ There are two fonts used throughout the site: "Merriweather" and "Merriweather-Sans"
  
-There will also be a 'sneak peek' section where unregistered users will be able to see some theories that are default with the website, however, no users posts will appear. This will gain their attention to register so that they can have access to all posts.
+ - I wanted to use a combination of two fonts to not make the site boring and plain. "Merriweather-Sans" I used for big title texts and buttons as it's slightly thicker and bolder, whereas "Merriweather" is used for the text on posts and larger quantities of information.
+
+#### Logo
+
+The logo for this project was designed and created by myself while using Adobe Illustrator. I wanted to implement the Striking orange color from the hero image as it would contrast well against the white navigation bar. I wanted to keep the logo simple, with no text to keep a clean and sleek aesthetic.
+
+#### Imagery
+
+- Images appear the most on the landing page to attract and show the site's visitors what the focus of the website is. Using high-quality images from Ghibli films keeps the ghibli aesthetic strong and attracts more users to the site, ultimately converting them into registered, active users. Images such as the hero image are used on the landing page, log in, logout, add and edit pages to keep the pages exciting and not bland.
+
+
 
   ## Scope
   
@@ -93,29 +127,6 @@ There will also be a 'sneak peek' section where unregistered users will be able 
 - [Desktop webiste view](https://github.com/laila-ba/Ghibli-Theories/blob/main/mockups/desktop%20view.pdf)
 - [Mobile webiste view](https://github.com/laila-ba/Ghibli-Theories/blob/main/mockups/mobile%20view.pdf)
 
-## Design
-
-#### Colour Scheme
-- The color scheme for this website evolves around the hero image on the landing page. It contains tones of royal blue and orange. Throughout the whole site, I have chosen to use dark blue, orange, and green. These fun colors stand out nicely against white backgrounds without appearing too much on the eye. They also portray the fun and magical feel that the Ghibli films offer to their fans.
-
-- Dark navy blue (#1d438a) - This is one of the main primary colors of the site used alongside orange. It goes well with the website as it carries on the deep-sea theme that the hero image on the landing page conveys. It is used for: banners of information and image titles for ghibli posts.
-
-- Coral Orange (#f4623a)- Taken from the hero image, this coral color is adapted a lot more throughout the site, being the primary color across the project. The contrast between blue and orange works nicely and goes hand in hand. It's used for: the logo, dividers underneath titles, URL buttons, hovering over nav sub-pages, and community post titles
-
-- Green (#008000) and Red(#ff0000)- A hint of green and red are used on the profile page for the edit and delete buttons to stand out to the user as both buttons allow the user to manage their data.
-
-#### Typography
- There are two fonts used throughout the site: "Merriweather" and "Merriweather-Sans"
- 
- - I wanted to use a combination of two fonts to not make the site boring and plain. "Merriweather-Sans" I used for big title texts and buttons as it's slightly thicker and bolder, whereas "Merriweather" is used for the text on posts and larger quantities of information.
-
-#### Logo
-
-The logo for this project was designed and created by myself while using Adobe Illustrator. I wanted to implement the Striking orange color from the hero image as it would contrast well against the white navigation bar. I wanted to keep the logo simple, with no text to keep a clean and sleek aesthetic.
-
-#### Imagery
-
-- Images appear the most on the landing page to attract and show the site's visitors what the focus of the website is. Using high-quality images from Ghibli films keeps the ghibli aesthetic strong and attracts more users to the site, ultimately converting them into registered, active users. Images such as the hero image are used on the landing page, log in, logout, add and edit pages to keep the pages exciting and not bland.
 
 ## Database Model
 For this project, I chose to use MongoDB for all database aspects to become more familiar with it through practice and development.MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time.

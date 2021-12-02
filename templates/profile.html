@@ -2,6 +2,7 @@
 {% block content %}
 
   <h2 class="text-center mt-4 custom-capitalize">{{ username }}'s Profile</h2>
+  <img class="img-fluid" src="{{ url_for('static', filename='assets/img/profile-image.png') }}" style="width:200px;" alt="..." />
       <div class="row">
           <div class="col-12 p-0 p-sm-4">
               <div class="card">
@@ -20,7 +21,7 @@
                         {% for post in posts %}
                           <div class="col-lg-4 col-md-6">
                               <div class="card bg-primary-color mb-4">
-                                  <div class="card-body">
+                                  <div class="card-body" style="min-height:55vh;">
                                     <a href="{{ url_for('delete_post', post_id=post._id) }}" class="btn-small" style="background-color:red;" data-bs-toggle="modal" data-bs-target="#removePost">DELETE</a>
                                     <div class="modal fade" id="removePost" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div class="modal-dialog">

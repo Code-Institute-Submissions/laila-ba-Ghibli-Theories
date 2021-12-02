@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-<div style="background-image: url('/static/assets/img/hero3.jpg'); background-position: center; background-size:cover;">
+<div style="background-image: url('/static/assets/img/hero3.jpg'); background-position: center; background-size:cover;"style="height:70vh;">
   <div class="login-page">
       <div class="form">
-        <h3 class="center-align">ADD POST</h3>
+        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/add-image.png') }}" style="width:200px;" alt="..." />
+        <h3 class="center-align title">ADD POST</h3>
   <form class=""register-form"" method="POST" action="{{ url_for('add') }}">
 
             <input id="theory_name" name="theory_name" placeholder="Theory Name" type="text" class="validate" required>

@@ -11136,6 +11136,8 @@ header.masthead h1, header.masthead .h1 {
 }
 .title{
   letter-spacing:0.3rem;
+  margin-top:3rem;
+  margin-bottom:3rem;
 }
 
 @media screen and (max-width: 800px) {

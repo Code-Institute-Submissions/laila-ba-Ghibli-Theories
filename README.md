@@ -50,6 +50,12 @@ Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simpl
 
 - Green (#008000) and Red(#ff0000)- A hint of green and red are used on the profile page for the edit and delete buttons to stand out to the user as both buttons allow the user to manage their data.
 
+## Logo 
+
+I had 3 main logos to choose from. All were based off of the origional studio ghibli logo but were more basic and simple, coresponding to the rest of the site. I ended up going with the first option as it went pretty well with the house colors of the site and stood out well against a white background on the navigation bar.
+
+  <img src="readme-docs/logo.png">
+
 ## Typography
  There are two fonts used throughout the site: "Merriweather" and "Merriweather-Sans"
 
@@ -59,13 +65,72 @@ Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simpl
 
 ## Imagery
 
-- Images appear the most on the landing page to attract and show the site's visitors what the focus of the website is. Using high-quality images from Ghibli films keeps the ghibli aesthetic strong and attracts more users to the site, ultimately converting them into registered, active users. Images such as the hero image are used on the landing page, log in, logout, add and edit pages to keep the pages exciting and not bland.
+- Images are an important part of the site as they are used to refer to the ghibli films and bring a magical and nostalgic feel to the site.They appear the most on the landing page to attract and show the site's visitors what the focus of the website is. 
 
+- Using high-quality images from Ghibli films keeps the ghibli aesthetic strong and attracts more users to the site, ultimately converting them into registered, active users. Images such as the hero image are used on the landing page, log in, logout, add and edit pages to keep the pages exciting and not bland.
 
+## Desktop Wireframes 
 
-  ## Scope
+<details>
+<summary>Home</summary>
+  <img src="readme-docs/Home.png">
+</details>
+<details>
+<summary>Browse</summary>
+  <img src="readme-docs/browse.png">
+</details>
+<details>
+<summary>Login</summary>
+  <img src="readme-docs/login.png">
+</details>
+<details>
+<summary>Register</summary>
+  <img src="readme-docs/register.png">
+</details>
+<details>
+<summary>Add Posts</summary>
+  <img src="readme-docs/add.png">
+</details>
+<details>
+<summary>Edit Posts</summary>
+  <img src="readme-docs/edit.png">
+</details>
+
+## Mobile Wireframes 
+
+<details>
+<summary>Home</summary>
+  <img src="readme-docs/home-m.png">
+</details>
+<details>
+<summary>Browse</summary>
+  <img src="readme-docs/browse-m.png">
+</details>
+<details>
+<summary>Login</summary>
+  <img src="readme-docs/login-m.png">
+</details>
+<details>
+<summary>Register</summary>
+  <img src="readme-docs/register-m.png">
+</details>
+<details>
+<summary>Add Posts</summary>
+  <img src="readme-docs/add-m.png">
+</details>
+<details>
+<summary>Edit Posts</summary>
+  <img src="readme-docs/edit-m.png">
+</details>
+
+## Mockups
+
+- [Desktop webiste view](https://github.com/laila-ba/Ghibli-Theories/blob/main/mockups/desktop%20view.pdf)
+- [Mobile webiste view](https://github.com/laila-ba/Ghibli-Theories/blob/main/mockups/mobile%20view.pdf)
+
+  # Features
   
-  Features within the initial design:
+  # Existing Features
   
   - A fully responsive website, can be viewed on any device.
   
@@ -122,10 +187,6 @@ Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simpl
   - The profile page will show the user's username alongside their posts while also giving them an option to add a post. Each of their posts will have an option to edit and delete. If the user chooses to delete the post, a modal pop appears asking the user again if they want to delete it. This is added for precaution just in case the user has clicked delete by accident. The profile page follows CRUD operations as it allows users to add, edit and delete their posts easily. Once posts are deleted, they are also removed from the browse section and will no longer be visible to the community
   - When posts are added, edited, or deleted, flash messages will appear letting the user know that it has been successful
 
-## Mockups
-
-- [Desktop webiste view](https://github.com/laila-ba/Ghibli-Theories/blob/main/mockups/desktop%20view.pdf)
-- [Mobile webiste view](https://github.com/laila-ba/Ghibli-Theories/blob/main/mockups/mobile%20view.pdf)
 
 
 ## Database Model

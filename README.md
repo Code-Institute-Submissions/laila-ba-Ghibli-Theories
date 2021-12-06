@@ -2,29 +2,30 @@
 
 ![Untitled](https://user-images.githubusercontent.com/75024926/130273638-6c406986-ad01-4d31-a128-f7939f44728c.png)
 
-
 # About
 
-Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simple and easy platform to share and learn about new Ghibli-based theories. Its main purpose is to keep fans up to date with the latest news and stories while allowing users to post, edit and delete their posts. 
+Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simple and easy platform to share and learn about new Ghibli-based theories. Its main purpose is to keep fans up to date with the latest news and stories while allowing users to post, edit and delete their posts.
 
 # User Experience
+
 ## User stories
+
 - Common User Stories
-  
+
   a. I want to find using the website's functionality simple with clear clear navigation.
 
   b. I want the site to be responsive on all screen sizes.
 
 - First-time visitor Goals
-  
+
   a. I want to be able to create an account quickly and securely.
 
   b. I want to be able to find the 'Register' page easily.
-  
+
 - Returning visitor Goals
 
   a. I want to be able to search the site for the theory that I want.
-  
+
   b. I want to be able to navigate to the 'Login' page easily.
 
   c. I want to post new theories easily.
@@ -34,8 +35,7 @@ Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simpl
   e. I want to view all posts that were created by me.
 
   f. I want to be able to Log out.
- 
-  
+
   # Design
 
   ## Color Scheme
@@ -50,14 +50,15 @@ Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simpl
 
 - Green (#008000) and Red(#ff0000)- A hint of green and red are used on the profile page for the edit and delete buttons to stand out to the user as both buttons allow the user to manage their data.
 
-## Logo 
+## Logo
 
 I had 3 main logos to choose from. All were based off of the origional studio ghibli logo but were more basic and simple, coresponding to the rest of the site. I ended up going with the first option as it went pretty well with the house colors of the site and stood out well against a white background on the navigation bar.
 
   <img src="readme-docs/logo.png">
 
 ## Typography
- There are two fonts used throughout the site: "Merriweather" and "Merriweather-Sans"
+
+There are two fonts used throughout the site: "Merriweather" and "Merriweather-Sans"
 
   <img src="readme-docs/typography.png">
  
@@ -65,11 +66,11 @@ I had 3 main logos to choose from. All were based off of the origional studio gh
 
 ## Imagery
 
-- Images are an important part of the site as they are used to refer to the ghibli films and bring a magical and nostalgic feel to the site.They appear the most on the landing page to attract and show the site's visitors what the focus of the website is. 
+- Images are an important part of the site as they are used to refer to the ghibli films and bring a magical and nostalgic feel to the site.They appear the most on the landing page to attract and show the site's visitors what the focus of the website is.
 
 - Using high-quality images from Ghibli films keeps the ghibli aesthetic strong and attracts more users to the site, ultimately converting them into registered, active users. Images such as the hero image are used on the landing page, log in, logout, add and edit pages to keep the pages exciting and not bland.
 
-## Desktop Wireframes 
+## Desktop Wireframes
 
 <details>
 <summary>Home</summary>
@@ -96,7 +97,7 @@ I had 3 main logos to choose from. All were based off of the origional studio gh
   <img src="readme-docs/edit.png">
 </details>
 
-## Mobile Wireframes 
+## Mobile Wireframes
 
 <details>
 <summary>Home</summary>
@@ -129,49 +130,50 @@ I had 3 main logos to choose from. All were based off of the origional studio gh
 - [Mobile webiste view](https://github.com/laila-ba/Ghibli-Theories/blob/main/mockups/mobile%20view.pdf)
 
   # Features
-  
+
   ## Existing Features
-  
+
   - A fully responsive website, can be viewed on any device.
-  
+
   - buttons on the landing page persuading the user to browse theories and register
-  
+
   - allowing users to create and manage their accounts
+
     - This includes editing and deleting their posts.
-  
+
   - registered users can search the browse page for theories.
 
   - My site will include sub-pages such as Home, Browse, Add, Profile, login, logout, register
+
     - subpages such as browse, add, profile, and login will only be available to registered users that are signed into their account.
-  
+
   - Once a user adds a theory and posts it, it is visible to the community on the browse page.
 
   - The browse page will include a section for theories posted by the web site's creator and another section posted by the community.
-  
-  #### Navigation Bar 
-  
-   - The navigation bar will be simple and easy to use that turns into a hamburger menu when viewed on a small screen.
-   - When the hamburger menu is clicked, a dropdown menu appears with the subpages. When the dropdown menu appears, the content below moves down allowing no content to be hidden underneath the navigation bar.
- 
-  #### Landing Page 
- 
-   - A vibrant hero image with the website name will appear in big bold writing with a short and simple summary below. A button will be placed below for 'Browse Theories' to allow easy navigation. For unregistered users, this takes them to the register page and for registered users, this takes them to the browse page.
-    
-   - Below the hero image, a small section will appear with the title 'join the community and a register button, again, for easy navigation while making the signing up process easy and simple for the user.
-    
-   - There will be a 'sneak peak' section with a small number of theories that draw new users to the site and allows them to see what the website is all about. The theories that appear in this section are posted by the website creator.
-     - When these are clicked on, a larger page appears with an enlarged image and text for the user to easily read. There is a close icon at the top of the page and a close button at the button.
-      
-   - Underneath this area, there is a small section with the title of 'want to see more?' that redirects users to the register page. The redirects to the register page persuade the user to signup to have full access to the website without any hassle.
-    
-  #### Browse Page 
-  
-  - At the top of the browse page, there will be a search bar that will enable the user to search through the communities posts, the results will be filtered through the theory names and descriptions. Besides this is a 'clear' button allowing the search bar and results to be reset. 
+
+  #### Navigation Bar
+
+  - The navigation bar will be simple and easy to use that turns into a hamburger menu when viewed on a small screen.
+  - When the hamburger menu is clicked, a dropdown menu appears with the subpages. When the dropdown menu appears, the content below moves down allowing no content to be hidden underneath the navigation bar.
+
+  #### Landing Page
+
+  - A vibrant hero image with the website name will appear in big bold writing with a short and simple summary below. A button will be placed below for 'Browse Theories' to allow easy navigation. For unregistered users, this takes them to the register page and for registered users, this takes them to the browse page.
+
+  - Below the hero image, a small section will appear with the title 'join the community and a register button, again, for easy navigation while making the signing up process easy and simple for the user.
+
+  - There will be a 'sneak peak' section with a small number of theories that draw new users to the site and allows them to see what the website is all about. The theories that appear in this section are posted by the website creator.
+    - When these are clicked on, a larger page appears with an enlarged image and text for the user to easily read. There is a close icon at the top of the page and a close button at the button.
+  - Underneath this area, there is a small section with the title of 'want to see more?' that redirects users to the register page. The redirects to the register page persuade the user to signup to have full access to the website without any hassle.
+
+  #### Browse Page
+
+  - At the top of the browse page, there will be a search bar that will enable the user to search through the communities posts, the results will be filtered through the theory names and descriptions. Besides this is a 'clear' button allowing the search bar and results to be reset.
   - section below will be the theories that are posted by the website's creator which have a clear difference in styling.
   - When viewed on mobile, The posts appear on top of each other rather than beside each other, making it easier and more efficient to view on smaller devices.
   - The browse page is only visible to registered users so that posts are only seen within the community.
 
-  #### Login, register, add post, edit post 
+  #### Login, register, add post, edit post
 
   - The forms used on these pages are all the same, keeping the same aesthetic throughout the website.
   - The add and edit forms can be only be accessed by registered users.
@@ -180,14 +182,13 @@ I had 3 main logos to choose from. All were based off of the origional studio gh
 
 - A custom 404 error page for when a user tries to access a page that doesn't fit their current state. e.g: the user attempts to register while being logged in. The 404 page has a link that takes them back to the home page and an image that fits well with the aesthetic of the website.
 
-#### Profile 
+#### Profile
 
-  - The profile page will show the user's username alongside their posts while also giving them an option to add a post. Each of their posts will have an option to edit and delete. If the user chooses to delete the post, a modal pop appears asking the user again if they want to delete it. This is added for precaution just in case the user has clicked delete by accident. The profile page follows CRUD operations as it allows users to add, edit and delete their posts easily. Once posts are deleted, they are also removed from the browse section and will no longer be visible to the community
-  - When posts are added, edited, or deleted, flash messages will appear letting the user know that it has been successful
-
-
+- The profile page will show the user's username alongside their posts while also giving them an option to add a post. Each of their posts will have an option to edit and delete. If the user chooses to delete the post, a modal pop appears asking the user again if they want to delete it. This is added for precaution just in case the user has clicked delete by accident. The profile page follows CRUD operations as it allows users to add, edit and delete their posts easily. Once posts are deleted, they are also removed from the browse section and will no longer be visible to the community
+- When posts are added, edited, or deleted, flash messages will appear letting the user know that it has been successful
 
 # The Database Model
+
 For this project, I chose to use MongoDB for all database aspects to become more familiar with it through practice and development.MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time.
 
 - Using 12-bit-MongoDB-specific unique values such as ObjectId's can be used to identify objects within the Database as it is used by MongoDB to search for a specific ObjectID.This is used within my project for my site to run smoothly, allowing users to manage their data.
@@ -201,148 +202,207 @@ Above, we have the posts collection that contains a user's post when added and t
 - Add like and dislike buttons to users posts, allowing the community to engage with one another
 - Added newsletter signup that would send registered users the latest theories by email
 
-## Technologies Used 
+## Technologies Used
 
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-  * This is used a the base of the code. It structures the code and acts as the main building block
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-* [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
-  * This allows styling to be added to the project.
+  - This is used a the base of the code. It structures the code and acts as the main building block
 
-* [Hover.css](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover)
-  * Hover effect used for the social icons, navbar, and portfolio.
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
 
-* [Bootstrap](https://getbootstrap.com/L)
-  * A framework to make the project responsive
+  - This allows styling to be added to the project.
 
-* [jQuery](https://jquery.com/)
-  * A framework used with Javascript
+- [Hover.css](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover)
 
-* [Font Awesome](https://fontawesome.com/)
-  * Used to obtain icons used for the footer and contact page.
+  - Hover effect used for the social icons, navbar, and portfolio.
 
-* [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
-  * Used to help debug the code and help find syntax errors.
+- [Bootstrap](https://getbootstrap.com/L)
 
-* [Github](https://github.com/)
-  * Used to push and store the code.
+  - A framework to make the project responsive
 
-* [Atom](https://atom.io/)
-  * Used as the IDE and the development environment for writing the code.
+- [jQuery](https://jquery.com/)
 
-* [JS validator](https://jshint.com/)
-  * Used as a JS validator
+  - A framework used with Javascript
 
-* [HTML validator](https://validator.w3.org/)
-  * Used as a HTML validator
-  
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-  * Used as a CSS validator
+- [Font Awesome](https://fontawesome.com/)
 
-* [Grammarly](https://www.grammarly.com/)
-  * Used to check and correct grammatical errors across the project.
+  - Used to obtain icons used for the footer and contact page.
 
-* [Python Validator](https://extendsclass.com/python-tester.html)
-  * Used as a python validator
-  
-* [Canva](https://www.canva.com/)
-  * Used to create mockups 
+- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
 
-* [am i responsive](http://ami.responsivedesign.is/#)
-  * A site used to see if my project is responsive
+  - Used to help debug the code and help find syntax errors.
 
-* [jinja](https://jinja.palletsprojects.com/en/3.0.x/)
-  * A web template engine for python.
+- [Github](https://github.com/)
 
-* [PyMongo](https://pymongo.readthedocs.io/en/stable/)
-  * A python distribution containing tools for working with MongoDb
+  - Used to push and store the code.
 
-* [Flask](https://flask.palletsprojects.com/en/2.0.x/)
-  * A micro web framework written in python
+- [Atom](https://atom.io/)
 
-* [heroku](https://en.wikipedia.org/wiki/Heroku)
-  * A cloud platform service supporting numerous languages
+  - Used as the IDE and the development environment for writing the code.
 
-* [MongoDB](https://www.mongodb.com/)
-  * The database platform used for this project.
+- [JS validator](https://jshint.com/)
+
+  - Used as a JS validator
+
+- [HTML validator](https://validator.w3.org/)
+  - Used as a HTML validator
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+  - Used as a CSS validator
+
+- [Grammarly](https://www.grammarly.com/)
+
+  - Used to check and correct grammatical errors across the project.
+
+- [Python Validator](https://extendsclass.com/python-tester.html)
+  - Used as a python validator
+- [Canva](https://www.canva.com/)
+
+  - Used to create mockups
+
+- [am i responsive](http://ami.responsivedesign.is/#)
+
+  - A site used to see if my project is responsive
+
+- [jinja](https://jinja.palletsprojects.com/en/3.0.x/)
+
+  - A web template engine for python.
+
+- [PyMongo](https://pymongo.readthedocs.io/en/stable/)
+
+  - A python distribution containing tools for working with MongoDb
+
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+
+  - A micro web framework written in python
+
+- [heroku](https://en.wikipedia.org/wiki/Heroku)
+
+  - A cloud platform service supporting numerous languages
+
+- [MongoDB](https://www.mongodb.com/)
+  - The database platform used for this project.
 
 # Testing
 
 ## Functionality
 
-  #### HTML Validation 
-  
-  Once I had finished the code for the project and put the URL into the validators, these were the main errors that appeared and how I resolved them:
-  
-   - "A slash was not immediately followed by >"
-       " alt="close"//></div>↩"    
-       - This was shown on multiple lines that had the img src for the close icon. I resolved this by removing the extra '/' on every line.
-        - There were no other errors present
+#### Navigation Bar
 
- #### CSS Validation 
- 
-  - Value Error : color Lexical error at line 3880, column 11. Encountered: "#" (35), after : "#" #00709c;
-     
-     - These errors were shown on multiple lines for extra hashtags for color codes. I resolved this by removing the extra tags.
-      - There were no other errors present
+- When the logo is clicked, it brings the user to the Home Page. This has been tested on desktop, tablet, and mobile views and from all pages.
+- The navigation links change depending on if the user is authorized or not, this has been tested.
+  Authorised user - Home, Browse, Profile, Add , Log Out
+  Unauthorised user - Home, Items, Register, Log In
+- All links in the navbar are working and have been tested.
+- The hamburger menu appears on screen sizes smaller than 992px. When clicked/tapped, it expands to reveal page links. These have been tested and are working as expected.
 
-#### JS Validation 
+#### Navigation Bar
 
-  - The main errors I received were missing or unnecessary semi-colons which were resolved by adding and removing them.
-    - There were no other errors present
+- When the social links are clicked, they open the relevant social media page.
 
-#### Python Validation
+#### Home
 
+- All links and buttons dispplayed on the page work correctly and redirect user to the right pages.
+- When the theory images are clicked on within the sneak peak section, the article of the theory appears on a pop up page with an image and the top and a close, icon and button.
+
+#### Browse
+
+- Authenticated users are able to search for their desired theory by typing it into the search bar at the top of the page. The search results appear bellow.
+- Next to the search bar, there is a clear button that clears the text written on the bar and clears the results found.
+- The theories posted by the community are displayed 3 posts on large screen sizes, 2 on medium, and 1 on small.
+- Within each post you can see the title, theory and the user's username that posted it
+
+#### Login
+
+- When correct credentials are entered, the user is logged in and redirected to the 'Profile' page where they can view their posts and add posts.
+  When incorrect credentials are entered, the user is told so by a message at the top of the page.
+
+#### Logout
+
+- When 'Log Out' is clicked on, the user is removed from the session cookie and is taken to the login page.
+- They are told o at the top of the page.
+
+#### Profile
+
+- Users can view their posts and also add a new post from their profile.
+- They are given the option to edit or delete their posts.
+- When the user clicks on delete, a pop up message appears, making sure they want to delete the post and that they cannot undo it.
+- When the edit button is clicked on, the user is taken to the edit page where they can see a form prefilled with the theory name and description. This enables the user to edit both fields and save the changes made.
+- When the users profile is viewed on a smaller screen, their posts that they have posted are on all displayed in one column.
+
+#### HTML Validation
+
+Once I had finished the code for the project and put the URL into the validators, these were the main errors that appeared and how I resolved them:
+
+- "A slash was not immediately followed by >"
+  " alt="close"//></div>↩"
+  - This was shown on multiple lines that had the img src for the close icon. I resolved this by removing the extra '/' on every line.
   - There were no other errors present
 
-## User Story Testing 
+#### CSS Validation
+
+- Value Error : color Lexical error at line 3880, column 11. Encountered: "#" (35), after : "#" #00709c;
+  - These errors were shown on multiple lines for extra hashtags for color codes. I resolved this by removing the extra tags.
+  - There were no other errors present
+
+#### JS Validation
+
+- The main errors I received were missing or unnecessary semi-colons which were resolved by adding and removing them.
+  - There were no other errors present
+
+#### PEP8 Validation
+
+- There were no errors present
+
+## User Story Testing
 
 "As a user, I want to find using the website's functionality simple and easy to use."
 
-  - Users a greeted with a short and simple summary on the landing page with a link to the browse page. Through the summary, they can understand immediately what the site's focus is.
-  
-   ![objectID2](https://user-images.githubusercontent.com/75024926/130268776-5a903380-b7c3-4101-a4b3-966c608b3180.png)
-   
-   - Form input fields are clear and simple to proceed to fill it in. Users can post theories easily without hassle.
-   
-  ![objectID2](https://user-images.githubusercontent.com/75024926/130270215-aab87839-9656-47df-bb28-46d721948d6f.png)
-  
-   "As a user, I want to have full control of my created posts following computer programming CRUD (create, read, update & delete) operations."
-    
-   - Users have full control of their posts as they can create, read, update and delete. My project has implemented CRUD functionality for the user to manage their posts.
-   ![Untitled](https://user-images.githubusercontent.com/75024926/130270915-20d24c32-9b00-485b-b205-bdc5628be3bf.png)
-   ![Untitled](https://user-images.githubusercontent.com/75024926/130271151-388f0bb2-ea3b-442f-af56-4fd5475b3818.png)
+- Users a greeted with a short and simple summary on the landing page with a link to the browse page. Through the summary, they can understand immediately what the site's focus is.
 
-   
-   - On a user's profile, they have a button that allows them to add posts as well as having edit and delete button beside all of their posted theories.
+![objectID2](https://user-images.githubusercontent.com/75024926/130268776-5a903380-b7c3-4101-a4b3-966c608b3180.png)
 
-### First Time visitor goals 
+- Form input fields are clear and simple to proceed to fill it in. Users can post theories easily without hassle.
 
- "As a first-time user, I want to be able to create an account quickly and securely."
- 
-  - Upon arriving on the site, a browse button is just below the hero summary which either takes registered users to the browse page, or new visitors to the registration page.    This allows users to easily become members without any hassle.
-  - Also, the navigation bar has a link to the registration page which is a simple form for the user to fill out, once completed, they are taken to their profile page.
-  
-  ![Untitled](https://user-images.githubusercontent.com/75024926/130271854-d8aa4296-972e-4f23-a609-ec0a6ca35703.png)
-  ![Untitled](https://user-images.githubusercontent.com/75024926/130271935-dbfb1123-1b18-4fb9-824e-1efbdb8839a9.png)
-  
-  ### Returning visitor goals 
-  
-  "As a returning visitor, I want to be able to search the site for the theory that I want."
-  
-  - Once a user has logged in, either through the navigation bar or on the landing page, there are links to take them to the browse page. At the top of the page, a search bar is visible and they can search through the community posts. The results are filtered through the theory name and description.
+![objectID2](https://user-images.githubusercontent.com/75024926/130270215-aab87839-9656-47df-bb28-46d721948d6f.png)
+
+"As a user, I want to have full control of my created posts following computer programming CRUD (create, read, update & delete) operations."
+
+- Users have full control of their posts as they can create, read, update and delete. My project has implemented CRUD functionality for the user to manage their posts.
+  ![Untitled](https://user-images.githubusercontent.com/75024926/130270915-20d24c32-9b00-485b-b205-bdc5628be3bf.png)
+  ![Untitled](https://user-images.githubusercontent.com/75024926/130271151-388f0bb2-ea3b-442f-af56-4fd5475b3818.png)
+
+- On a user's profile, they have a button that allows them to add posts as well as having edit and delete button beside all of their posted theories.
+
+### First Time visitor goals
+
+"As a first-time user, I want to be able to create an account quickly and securely."
+
+- Upon arriving on the site, a browse button is just below the hero summary which either takes registered users to the browse page, or new visitors to the registration page. This allows users to easily become members without any hassle.
+- Also, the navigation bar has a link to the registration page which is a simple form for the user to fill out, once completed, they are taken to their profile page.
+
+![Untitled](https://user-images.githubusercontent.com/75024926/130271854-d8aa4296-972e-4f23-a609-ec0a6ca35703.png)
+![Untitled](https://user-images.githubusercontent.com/75024926/130271935-dbfb1123-1b18-4fb9-824e-1efbdb8839a9.png)
+
+### Returning visitor goals
+
+"As a returning visitor, I want to be able to search the site for the theory that I want."
+
+- Once a user has logged in, either through the navigation bar or on the landing page, there are links to take them to the browse page. At the top of the page, a search bar is visible and they can search through the community posts. The results are filtered through the theory name and description.
 
 ![Untitled](https://user-images.githubusercontent.com/75024926/130273811-4d4db323-5282-45d6-b605-f348191f0dd5.png)
 
-  ### Accessibilty
-  
-  [Screenshots from Google Lighthouse's accessibility checker can be viewed here](https://github.com/laila-ba/Ghibli-Theories/tree/main/testing)
-  
-  ### Bugs
-  
-  #### Listed below are some bugs I came across while building this project and how I resolved them:
-  
-  1. Making the forms responsive on mobile devices
+### Accessibilty
+
+[Screenshots from Google Lighthouse's accessibility checker can be viewed here](https://github.com/laila-ba/Ghibli-Theories/tree/main/testing)
+
+### Bugs
+
+#### Listed below are some bugs I came across while building this project and how I resolved them:
+
+1. Making the forms responsive on mobile devices
+
+
     - The forms appeared nicely centered on desktop view however when the screen was smaller, the forms moved to the right and were out of view. I knew I had to add a media query to resolve the issue so I added :
       - @media screen and (max-width:522px){
           .login-page{
@@ -353,79 +413,84 @@ Above, we have the posts collection that contains a user's post when added and t
 - Realizing that it hadnt worked, i then switched it around and added :
 
 @media screen and (min-width: 522px) {
-  .login-page {
-    width: 500px;
-  }
+.login-page {
+width: 500px;
+}
 }
 
 After adding this, the form was centered on both viewports and was responsive.
 
 2. Making sure user posts were appearing fine on the browser page
-  - I had an issue where the user's posts were appearing inside each other's divs. Initially, I thought there was something wrong with the styling in CSS but after taking a look at the template, I had realized that the 'end for the element was meant to be appearing between the last two divs. When doing this, the issue was resolved and the posts were appearing in their separate boxes.
+
+- I had an issue where the user's posts were appearing inside each other's divs. Initially, I thought there was something wrong with the styling in CSS but after taking a look at the template, I had realized that the 'end for the element was meant to be appearing between the last two divs. When doing this, the issue was resolved and the posts were appearing in their separate boxes.
 
 ![profile](https://user-images.githubusercontent.com/75024926/130280439-ffced0de-eb69-4294-8fe4-6c803e9a561b.png)
 
 3. The search bar on the browse page didn't let users click on it to write
- - I had an issue where the search bar couldnt be clicked on, meaning something was blocking it. It took me a while to figure out however when looking at the CSS, i realised there was : pointer-events: none; being applied onto the class of the input field. Once this was removed, it was working fine.
 
+- I had an issue where the search bar couldnt be clicked on, meaning something was blocking it. It took me a while to figure out however when looking at the CSS, i realised there was : pointer-events: none; being applied onto the class of the input field. Once this was removed, it was working fine.
 
 ## Deployment
 
-Ghibli theories are live and automatically deployed to Heroku with synchronization enabled to GitHub. The env.py file, which is not sent externally, contains the necessary MongoDB information such as (IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME) which allows the project to run smoothly with MongoDB. Just before deploying, carrying out a pip freeze is important as it ensures that the requirements.txt file is updated with all the necessary modules needed to deploy the app. I did this through the command 
-pip3 freeze --local > 
+Ghibli theories are live and automatically deployed to Heroku with synchronization enabled to GitHub. The env.py file, which is not sent externally, contains the necessary MongoDB information such as (IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME) which allows the project to run smoothly with MongoDB. Just before deploying, carrying out a pip freeze is important as it ensures that the requirements.txt file is updated with all the necessary modules needed to deploy the app. I did this through the command
+pip3 freeze --local >
 requirements.txt
-The procfile is also a very important file to be created as it is what allows Heroku to execute the app correctly. This can be done through : 
+The procfile is also a very important file to be created as it is what allows Heroku to execute the app correctly. This can be done through :
 echo web: python app.py >
 Procfile
 Within Heroku's config vars, you must enter the information such as (IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME) to link everything together.
 
 #### Github
 
-*Publishing*
+_Publishing_
 
-* Within your repository section, choose which project you would like to deploy.
-* At the top, underneath the project name, there are several options such as 'code' and 'issues'
-* Choose the option 'settings'
-* Scroll down until you see the section: 'Github Pages'
-* Within this section, below 'source', choose which branch your project is under and then click Save.
-* Once the page refreshes, go to the Github pages section and you will see "Your site is published at ...."
-* Click on the Github Pages web address and you will see your project live.
+- Within your repository section, choose which project you would like to deploy.
+- At the top, underneath the project name, there are several options such as 'code' and 'issues'
+- Choose the option 'settings'
+- Scroll down until you see the section: 'Github Pages'
+- Within this section, below 'source', choose which branch your project is under and then click Save.
+- Once the page refreshes, go to the Github pages section and you will see "Your site is published at ...."
+- Click on the Github Pages web address and you will see your project live.
 
-*Forking*
+_Forking_
 You can fork a project to make a copy without it affecting the main branch with this process:
 
-* log in to GitHub and find the repository that you wish to fork
-* Once you have clicked on the repository, on the top right-hand side you will see three options: 'unwatch' 'star' and 'fork'
-* Once the fork button is clicked, you will then have a copy of the repository in your Github account
+- log in to GitHub and find the repository that you wish to fork
+- Once you have clicked on the repository, on the top right-hand side you will see three options: 'unwatch' 'star' and 'fork'
+- Once the fork button is clicked, you will then have a copy of the repository in your Github account
 
-*Cloning*
+_Cloning_
 You can clone/download your chosen repository to your local device by using this process:
 
-* Choose the Github repository that you wish to clone.
-* Chose the 'code' button at the top next top 'add file'.
-* Copy the link that you are given.
-* Open your terminal and choose the directory to the location you would like the clone to be in.
-* type in *git clone* and paste the URL you copied and then click enter.
+- Choose the Github repository that you wish to clone.
+- Chose the 'code' button at the top next top 'add file'.
+- Copy the link that you are given.
+- Open your terminal and choose the directory to the location you would like the clone to be in.
+- type in _git clone_ and paste the URL you copied and then click enter.
 
 ## Credits
 
 [Stack Overflow](https://stackoverflow.com/)
-  - used to resolve build failure for Heroku application and application errors
-  - Used to find out more information on Heroku and MongoDB
+
+- used to resolve build failure for Heroku application and application errors
+- Used to find out more information on Heroku and MongoDB
 
 ## Code
 
 #### These are any resources that I customized and used for this project:
 
 [Search bar](https://colorlib.com/wp/bootstrap-search-bar/)
+
 - This was used and customized to achieve the search bar.
 
 [Forms](https://colorlib.com/wp/bootstrap-form-templates/)
+
 - Used for all forms across the project.
 
 [Python Functions](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopment)
+
 - Functions from the Task manager project were used as a guideline for this project.
 
 ## Acknowledgements
 
- A large part of this project was done independently however tutor support was extremely helpful along the way with frustrating pieces of code that would not work! That being said, I hope you all enjoy my project :)
+A large part of this project was done independently however tutor support was extremely helpful along the way with frustrating pieces of code that would not work! That being said, I hope you all enjoy my project :)

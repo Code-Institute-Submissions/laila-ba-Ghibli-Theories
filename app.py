@@ -23,6 +23,7 @@ mongo = PyMongo(app)
 def home():
     return render_template("home.html")
 
+
 @app.route("/")
 @app.route("/get_posts")
 def get_posts():
@@ -81,6 +82,7 @@ def login():
 
     return render_template("login.html")
 
+
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
@@ -88,7 +90,7 @@ def profile(username):
         {"username": session["user"]})["username"]
     posts = list(mongo.db.posts.find({"posted_by": session["user"]}))
     if session["user"]:
-        return render_template("profile.html",posts=posts, username=username)
+        return render_template("profile.html", posts=posts, username=username)
 
     return redirect(url_for("login"))
 
@@ -109,6 +111,7 @@ def add():
     theories = mongo.db.posts.find().sort("theory_name", 1)
     return render_template("add.html", theories=theories)
 
+
 @app.route("/edit_post/<post_id>", methods=["GET", "POST"])
 def edit_post(post_id):
     if request.method == "POST":
@@ -123,6 +126,7 @@ def edit_post(post_id):
     post = mongo.db.posts.find_one({"_id": ObjectId(post_id)})
     theories = mongo.db.posts.find().sort("theory_name", 1)
     return render_template("edit_post.html", post=post, theories=theories)
+
 
 @app.route("/delete_post/<post_id>")
 def delete_post(post_id):

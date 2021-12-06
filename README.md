@@ -130,7 +130,7 @@ I had 3 main logos to choose from. All were based off of the origional studio gh
 
   # Features
   
-  # Existing Features
+  ## Existing Features
   
   - A fully responsive website, can be viewed on any device.
   
@@ -147,15 +147,13 @@ I had 3 main logos to choose from. All were based off of the origional studio gh
   - Once a user adds a theory and posts it, it is visible to the community on the browse page.
 
   - The browse page will include a section for theories posted by the web site's creator and another section posted by the community.
-
-  ## Structure
   
   #### Navigation Bar 
   
    - The navigation bar will be simple and easy to use that turns into a hamburger menu when viewed on a small screen.
    - When the hamburger menu is clicked, a dropdown menu appears with the subpages. When the dropdown menu appears, the content below moves down allowing no content to be hidden underneath the navigation bar.
  
- #### Landing Page 
+  #### Landing Page 
  
    - A vibrant hero image with the website name will appear in big bold writing with a short and simple summary below. A button will be placed below for 'Browse Theories' to allow easy navigation. For unregistered users, this takes them to the register page and for registered users, this takes them to the browse page.
     
@@ -173,7 +171,7 @@ I had 3 main logos to choose from. All were based off of the origional studio gh
   - When viewed on mobile, The posts appear on top of each other rather than beside each other, making it easier and more efficient to view on smaller devices.
   - The browse page is only visible to registered users so that posts are only seen within the community.
 
-#### Login, register, add post, edit post 
+  #### Login, register, add post, edit post 
 
   - The forms used on these pages are all the same, keeping the same aesthetic throughout the website.
   - The add and edit forms can be only be accessed by registered users.
@@ -189,7 +187,7 @@ I had 3 main logos to choose from. All were based off of the origional studio gh
 
 
 
-## Database Model
+# The Database Model
 For this project, I chose to use MongoDB for all database aspects to become more familiar with it through practice and development.MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time.
 
 - Using 12-bit-MongoDB-specific unique values such as ObjectId's can be used to identify objects within the Database as it is used by MongoDB to search for a specific ObjectID.This is used within my project for my site to run smoothly, allowing users to manage their data.
@@ -268,7 +266,9 @@ Above, we have the posts collection that contains a user's post when added and t
 * [MongoDB](https://www.mongodb.com/)
   * The database platform used for this project.
 
-## Testing
+# Testing
+
+## Functionality
 
   #### HTML Validation 
   

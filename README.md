@@ -176,9 +176,9 @@ There are two fonts used throughout the site: "Merriweather" and "Merriweather-S
   #### Login, register, add post, edit post
 
   - The forms used on these pages are all the same, keeping the same aesthetic throughout the website.
-  - The add and edit forms can be only be accessed by registered users.
+  - The add and edit forms can be only be accessed by registered and authenticated users.
 
-#### 404
+#### 404 page
 
 - A custom 404 error page for when a user tries to access a page that doesn't fit their current state. e.g: the user attempts to register while being logged in. The 404 page has a link that takes them back to the home page and an image that fits well with the aesthetic of the website.
 
@@ -292,12 +292,9 @@ Above, we have the posts collection that contains a user's post when added and t
 - When the logo is clicked, it brings the user to the Home Page. This has been tested on desktop, tablet, and mobile views and from all pages.
 - The navigation links change depending on if the user is authorized or not, this has been tested.
   Authorised user - Home, Browse, Profile, Add , Log Out
-  Unauthorised user - Home, Items, Register, Log In
+  Unauthorised user - Home, Register, Log In
 - All links in the navbar are working and have been tested.
 - The hamburger menu appears on screen sizes smaller than 992px. When clicked/tapped, it expands to reveal page links. These have been tested and are working as expected.
-
-#### Navigation Bar
-
 - When the social links are clicked, they open the relevant social media page.
 
 #### Home
@@ -322,6 +319,11 @@ Above, we have the posts collection that contains a user's post when added and t
 - When 'Log Out' is clicked on, the user is removed from the session cookie and is taken to the login page.
 - They are told o at the top of the page.
 
+#### Register
+
+- Username and Password are required and form will not submit unless they have been entered in the required format.
+- Once details have been filled correctly, the user is taken to their profile page.
+
 #### Profile
 
 - Users can view their posts and also add a new post from their profile.
@@ -330,20 +332,25 @@ Above, we have the posts collection that contains a user's post when added and t
 - When the edit button is clicked on, the user is taken to the edit page where they can see a form prefilled with the theory name and description. This enables the user to edit both fields and save the changes made.
 - When the users profile is viewed on a smaller screen, their posts that they have posted are on all displayed in one column.
 
+#### Footer
+
+- When the social links are clicked, they open the relevant social media page in a new tab.
+
 #### HTML Validation
 
 Once I had finished the code for the project and put the URL into the validators, these were the main errors that appeared and how I resolved them:
 
-- "A slash was not immediately followed by >"
-  " alt="close"//></div>↩"
-  - This was shown on multiple lines that had the img src for the close icon. I resolved this by removing the extra '/' on every line.
-  - There were no other errors present
+        "A slash was not immediately followed by >"" alt="close"//></div>↩"
+
+- This was shown on multiple lines that had the img src for the close icon. I resolved this by removing the extra '/' on every line.
+- There were no other errors present
 
 #### CSS Validation
 
-- Value Error : color Lexical error at line 3880, column 11. Encountered: "#" (35), after : "#" #00709c;
-  - These errors were shown on multiple lines for extra hashtags for color codes. I resolved this by removing the extra tags.
-  - There were no other errors present
+        Value Error : color Lexical error at line 3880, column 11. Encountered: "#" (35), after : "#" #00709c;
+
+- These errors were shown on multiple lines for extra hashtags for color codes. I resolved this by removing the extra tags.
+- There were no other errors present
 
 #### JS Validation
 
@@ -354,93 +361,196 @@ Once I had finished the code for the project and put the URL into the validators
 
 - There were no errors present
 
-## User Story Testing
+# User Story Testing
 
-"As a user, I want to find using the website's functionality simple and easy to use."
+<br>
 
-- Users a greeted with a short and simple summary on the landing page with a link to the browse page. Through the summary, they can understand immediately what the site's focus is.
+### Common user stories
 
-![objectID2](https://user-images.githubusercontent.com/75024926/130268776-5a903380-b7c3-4101-a4b3-966c608b3180.png)
+<br>
 
-- Form input fields are clear and simple to proceed to fill it in. Users can post theories easily without hassle.
+a. " I want to find using the website's functionality simple with clear clear navigation."
 
-![objectID2](https://user-images.githubusercontent.com/75024926/130270215-aab87839-9656-47df-bb28-46d721948d6f.png)
+- The navigation is simple to use with a simplistic navigation bar to follow. All links take the user to the relevant pages. Th nvigation bar transforms into a hamburger menu when viewed on smaller screens and aslo keeps the simplisity of usage flowing.
+- <details>
+  <summary>Users a greeted with a short and simple summary on the landing page with a link to the browse page. Through the summary, they can understand immediately what the site's focus is and what they are able to do with access to the site.</summary>
+    <img src="https://user-images.githubusercontent.com/75024926/130268776-5a903380-b7c3-4101-a4b3-966c608b3180.png">
+  </details>
+- <details>
+      <summary>Form input fields are clear and simple to proceed to fill it in. Users can post theories easily without hassle.</summary>
+        <img src="https://user-images.githubusercontent.com/75024926/130270215-aab87839-9656-47df-bb28-46d721948d6f.png">
+     </details>
+  <br>
+  b. I want the site to be responsive on all screen sizes.
+      - Pages have been extensively tested to ensure it is responsive and works in all screen sizes.
 
-"As a user, I want to have full control of my created posts following computer programming CRUD (create, read, update & delete) operations."
+<br>
 
-- Users have full control of their posts as they can create, read, update and delete. My project has implemented CRUD functionality for the user to manage their posts.
-  ![Untitled](https://user-images.githubusercontent.com/75024926/130270915-20d24c32-9b00-485b-b205-bdc5628be3bf.png)
-  ![Untitled](https://user-images.githubusercontent.com/75024926/130271151-388f0bb2-ea3b-442f-af56-4fd5475b3818.png)
+### First Time user stories
 
-- On a user's profile, they have a button that allows them to add posts as well as having edit and delete button beside all of their posted theories.
+<br>
 
-### First Time visitor goals
+c. "I want to be able to create an account quickly and securely."
 
-"As a first-time user, I want to be able to create an account quickly and securely."
+- <details>
+    <summary>Upon arriving on the site, a browse button is just below the hero summary which either takes registered users to the browse page, or new visitors to the registration page. This allows users to easily become members without any hassle.</summary>
+      <img src="https://user-images.githubusercontent.com/75024926/130271854-d8aa4296-972e-4f23-a609-ec0a6ca35703.png">
+    </details>
 
-- Upon arriving on the site, a browse button is just below the hero summary which either takes registered users to the browse page, or new visitors to the registration page. This allows users to easily become members without any hassle.
-- Also, the navigation bar has a link to the registration page which is a simple form for the user to fill out, once completed, they are taken to their profile page.
+- <details>
+    <summary>the navigation bar has a link to the registration page which is a simple form for the user to fill out, once completed, they are taken to their profile page.</summary>
+      <img src="https://user-images.githubusercontent.com/75024926/130271935-dbfb1123-1b18-4fb9-824e-1efbdb8839a9.png">
+    </details>
 
-![Untitled](https://user-images.githubusercontent.com/75024926/130271854-d8aa4296-972e-4f23-a609-ec0a6ca35703.png)
-![Untitled](https://user-images.githubusercontent.com/75024926/130271935-dbfb1123-1b18-4fb9-824e-1efbdb8839a9.png)
+d. I want to be able to find the 'Register' page easily. - The register page can be found easily through the register buttons on the landing page and through the navigation bar link which is displayed at the top of every page.
+<br>
 
 ### Returning visitor goals
 
-"As a returning visitor, I want to be able to search the site for the theory that I want."
+<br>
 
-- Once a user has logged in, either through the navigation bar or on the landing page, there are links to take them to the browse page. At the top of the page, a search bar is visible and they can search through the community posts. The results are filtered through the theory name and description.
+e. "I want to have full control of my created posts following computer programming CRUD (create, read, update & delete) operations."
 
-![Untitled](https://user-images.githubusercontent.com/75024926/130273811-4d4db323-5282-45d6-b605-f348191f0dd5.png)
+- <details>
+  <summary>Users have full control of their posts as they can create, read, update and delete. My project has implemented CRUD functionality for the user to manage their posts.</summary>
+    <img src="https://user-images.githubusercontent.com/75024926/130270915-20d24c32-9b00-485b-b205-bdc5628be3bf.png">
+    <img src="https://user-images.githubusercontent.com/75024926/130271151-388f0bb2-ea3b-442f-af56-4fd5475b3818.png">
+  </details>
+- On a user's profile, they have a button that allows them to add posts as well as having edit and delete button beside all of their posted theories.
 
-### Accessibilty
+f. "I want to be able to search the site for the theory that I want."
+
+- <details>
+  <summary>Once a user has logged in, either through the navigation bar or on the landing page, there are links to take them to the browse page. At the top of the page, a search bar is visible and they can search through the community posts. The results are filtered through the theory name and description.</summary>
+    <img src="https://user-images.githubusercontent.com/75024926/130273811-4d4db323-5282-45d6-b605-f348191f0dd5.png">
+  </details>
+
+g. "I want to be able to navigate to the login page and Login easily."
+
+- The login form only contains 2 fields. making it quick and easy for authentication.
+- If the user Logs Out, they are redirected to the login page in case they want to Log in again.
+- If the user clicks on the 'Register' page they can find the 'Log In' page link under the login form in a contrasting color.
+- The 'Log In' page is located and clearly labeled in the navigation bar.
+
+h. "I want to post new theories easily."
+
+- The 'Add post' page is located in the navigation bar and clearly labeled as 'ADD'.
+- The add form is responsive and easy to use.
+- Users can add posts through their profile as they have a button that redirects them to the add post form
+
+i."I want to view all posts that were created by me."
+
+- All posts that have been created by the user can be seen my deafault on their profile
+
+j. "I want to be able to Log out."
+
+- The 'Log Out' button is located in the navigation bar and labeled clearly
+
+# Browser Compatibility
+
+<img src="readme-docs/browser.png">
+
+- Responsively was used to view my site from various devices simultaneously, helping me spot any errors. The different devices varied from Galaxy Fold (280px) to large Desktop ViewPorts.
+
+# Accessibilty
 
 [Screenshots from Google Lighthouse's accessibility checker can be viewed here](https://github.com/laila-ba/Ghibli-Theories/tree/main/testing)
 
-### Bugs
+# Bugs
 
 #### Listed below are some bugs I came across while building this project and how I resolved them:
 
-1. Making the forms responsive on mobile devices
-
+1.  Making the forms responsive on mobile devices
 
     - The forms appeared nicely centered on desktop view however when the screen was smaller, the forms moved to the right and were out of view. I knew I had to add a media query to resolve the issue so I added :
-      - @media screen and (max-width:522px){
-          .login-page{
-          width:355px;
-          }
+
+             @media screen and (max-width:522px){
+             .login-page{
+             width:355px;
+             }
+
     - Through this code, I wanted to make the form's width 355px until it was viewed on a larger screen however, this didn't seem to work. I did some debugging and realized that the code wasn't being read because there was an extra '}' above the code and it was being used. Once I removed the extra curly bracket, the media query was working and the form appeared centered on smaller devices, but it was moved to the left on the desktop.
 
-- Realizing that it hadnt worked, i then switched it around and added :
+    - Realizing that it hadnt worked, i then switched it around and added this which fixed the issue :
 
-@media screen and (min-width: 522px) {
-.login-page {
-width: 500px;
-}
-}
+          @media screen and (min-width: 522px) {
+          .login-page {
+          width: 500px;
+          }
+          }
 
-After adding this, the form was centered on both viewports and was responsive.
+2.  Making sure user posts were appearing fine on the browser page
 
-2. Making sure user posts were appearing fine on the browser page
+    - I had an issue where the user's posts were appearing inside each other's divs. Initially, I thought there was something wrong with the styling in CSS but after taking a look at the template, I had realized that the 'end for the element was meant to be appearing between the last two divs.
+    - <details>
+      <summary>When doing this, the issue was resolved and the posts were appearing in their separate boxes.</summary>
+        <img src="https://user-images.githubusercontent.com/75024926/130280439-ffced0de-eb69-4294-8fe4-6c803e9a561b.png">
+      </details>
 
-- I had an issue where the user's posts were appearing inside each other's divs. Initially, I thought there was something wrong with the styling in CSS but after taking a look at the template, I had realized that the 'end for the element was meant to be appearing between the last two divs. When doing this, the issue was resolved and the posts were appearing in their separate boxes.
-
-![profile](https://user-images.githubusercontent.com/75024926/130280439-ffced0de-eb69-4294-8fe4-6c803e9a561b.png)
-
-3. The search bar on the browse page didn't let users click on it to write
+3.  The search bar on the browse page didn't let users click on it to write
 
 - I had an issue where the search bar couldnt be clicked on, meaning something was blocking it. It took me a while to figure out however when looking at the CSS, i realised there was : pointer-events: none; being applied onto the class of the input field. Once this was removed, it was working fine.
 
-## Deployment
+# Deployment
 
-Ghibli theories are live and automatically deployed to Heroku with synchronization enabled to GitHub. The env.py file, which is not sent externally, contains the necessary MongoDB information such as (IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME) which allows the project to run smoothly with MongoDB. Just before deploying, carrying out a pip freeze is important as it ensures that the requirements.txt file is updated with all the necessary modules needed to deploy the app. I did this through the command
-pip3 freeze --local >
-requirements.txt
-The procfile is also a very important file to be created as it is what allows Heroku to execute the app correctly. This can be done through :
-echo web: python app.py >
-Procfile
-Within Heroku's config vars, you must enter the information such as (IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME) to link everything together.
+## Local - Instructions to run the project on your local device using an IDE
 
-#### Github
+1. Within the project repository, Download the files locally  by clicking the 'Code' button located in the top section of the repository. Then select 'Download ZIP' and unzip the files in the directory of your choice.
+  
+  <img src="readme-docs/code.png">
+
+2. You can also Clone the repository instead by running the following command from your IDE
+
+          gh repo clone laila-ba/Ghibli-Theories
+
+3. After doing this, within your chosen IDE, make sure you are inside the project folder by using 
+
+           cd The/Project/Folder/Path
+
+4.  Activate virtual enviroment:
+    - Python's venv source 
+            .venv/bin/activate
+    
+    - Using Windows and macOS, .venv is the name you gave previously
+
+5. Install all requirements from requirements.txt file
+
+          pip3 install -r requirements.txt
+  - After this, create a file named 'env.py' to store all environment variables like so:
+
+          os.environ.setdefault("SECRET_KEY", "")
+          os.environ.setdefault("MONGO_URI", "")
+          os.environ.setdefault("MONGO_DBNAME", "")
+
+6. Run the application
+
+         python3 app.py
+
+## Remote 
+
+1. Set up a [Heroku](https://www.heroku.com/) account and create a new app.
+
+2. Create the requirements.txt file to contain all dependencies
+
+           pip3 freeze --local > requirements.txt
+
+3. Create a Procfile
+
+           echo web: python app.py > Procfile
+
+4. Add your environment variables. This can be done by going to the 'Settings' tab and click 'Reveal Config Vars' and add the following variables
+
+          IP <0.0.0.0>
+          MONGO_DBNAME <ghibli_theories>
+          MONGO_URI <mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority>
+          SECRET_KEY <your_secret_key>
+
+5. Ensure that recent files have been added, committed and pushed to your GitHub repository
+
+6. At the top of the heroku site, click on *Deploy*. Choose automatic deploys to your Github account and repo name. Once this is done, you can open the app.
+
+ 
+## Github
 
 _Publishing_
 
@@ -491,6 +601,4 @@ You can clone/download your chosen repository to your local device by using this
 
 - Functions from the Task manager project were used as a guideline for this project.
 
-## Acknowledgements
-
-A large part of this project was done independently however tutor support was extremely helpful along the way with frustrating pieces of code that would not work! That being said, I hope you all enjoy my project :)
+---

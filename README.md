@@ -12,7 +12,7 @@ Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simpl
 
 - Common User Stories
 
-  a. I want to find using the website's functionality simple with clear clear navigation.
+  a. I want to find using the website's functionality simple with clear navigation.
 
   b. I want the site to be responsive on all screen sizes.
 
@@ -40,7 +40,7 @@ Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simpl
 
   ## Color Scheme
 
-- I wanted to create a fun and colorful color scheme,which co ordinates with Ghibli films, while still keeping the site looking simplistic and clean. Because of this, i chose to stick to only two main colors that are based on the hero image on the landing page. It contains tones of royal blue and orange. Throughout the whole site, I have chosen to use dark blue, orange, and green. These fun colors stand out nicely against white backgrounds without appearing too much on the eye. They also portray the fun and magical feel that the Ghibli films offer to their fans.
+- I wanted to create a fun and colorful color scheme, which coordinates with Ghibli films, while still keeping the site looking simplistic and clean. Because of this, I chose to stick to only two main colors that are based on the hero image on the landing page. It contains tones of royal blue and orange. Throughout the whole site, I have chosen to use dark blue, orange, and green. These fun colors stand out nicely against white backgrounds without appearing too much on the eye. They also portray the fun and magical feel that the Ghibli films offer to their fans.
 
   <img src="readme-docs/color-scheme.png">
 
@@ -52,7 +52,7 @@ Ghibli Theories is a website that focuses on bringing Studio Ghibli fans a simpl
 
 ## Logo
 
-I had 3 main logos to choose from. All were based off of the origional studio ghibli logo but were more basic and simple, coresponding to the rest of the site. I ended up going with the first option as it went pretty well with the house colors of the site and stood out well against a white background on the navigation bar.
+I had 3 main logos to choose from. All were based on the original studio ghibli logo but were more basic and simple, corresponding to the rest of the site. I ended up going with the first option as it went pretty well with the house colors of the site and stood out well against a white background on the navigation bar.
 
   <img src="readme-docs/logo.png">
 
@@ -66,7 +66,7 @@ There are two fonts used throughout the site: "Merriweather" and "Merriweather-S
 
 ## Imagery
 
-- Images are an important part of the site as they are used to refer to the ghibli films and bring a magical and nostalgic feel to the site.They appear the most on the landing page to attract and show the site's visitors what the focus of the website is.
+- Images are an important part of the site as they are used to refer to the ghibli films and bring a magical and nostalgic feel to the site. They appear the most on the landing page to attract and show the site's visitors what the focus of the website is.
 
 - Using high-quality images from Ghibli films keeps the ghibli aesthetic strong and attracts more users to the site, ultimately converting them into registered, active users. Images such as the hero image are used on the landing page, log in, logout, add and edit pages to keep the pages exciting and not bland.
 
@@ -149,7 +149,7 @@ There are two fonts used throughout the site: "Merriweather" and "Merriweather-S
 
   - Once a user adds a theory and posts it, it is visible to the community on the browse page.
 
-  - The browse page will include a section for theories posted by the web site's creator and another section posted by the community.
+  - The browse page will include a section for theories posted by the website's creator and another section posted by the community.
 
   #### Navigation Bar
 
@@ -162,7 +162,7 @@ There are two fonts used throughout the site: "Merriweather" and "Merriweather-S
 
   - Below the hero image, a small section will appear with the title 'join the community and a register button, again, for easy navigation while making the signing up process easy and simple for the user.
 
-  - There will be a 'sneak peak' section with a small number of theories that draw new users to the site and allows them to see what the website is all about. The theories that appear in this section are posted by the website creator.
+  - There will be a 'sneak peak' section with a small number of theories that draw new users to the site and allow them to see what the website is all about. The theories that appear in this section are posted by the website creator.
     - When these are clicked on, a larger page appears with an enlarged image and text for the user to easily read. There is a close icon at the top of the page and a close button at the button.
   - Underneath this area, there is a small section with the title of 'want to see more?' that redirects users to the register page. The redirects to the register page persuade the user to signup to have full access to the website without any hassle.
 
@@ -214,7 +214,7 @@ Above, we have the posts collection that contains a user's post when added and t
 
 - [Hover.css](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover)
 
-  - Hover effect used for the social icons, navbar, and portfolio.
+  - Hover effect is used for the social icons, navbar, and portfolio.
 
 - [Bootstrap](https://getbootstrap.com/L)
 
@@ -270,11 +270,11 @@ Above, we have the posts collection that contains a user's post when added and t
 
 - [PyMongo](https://pymongo.readthedocs.io/en/stable/)
 
-  - A python distribution containing tools for working with MongoDb
+  - A Python distribution containing tools for working with MongoDB
 
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 
-  - A micro web framework written in python
+  - A micro web framework is written in python
 
 - [heroku](https://en.wikipedia.org/wiki/Heroku)
 
@@ -291,23 +291,23 @@ Above, we have the posts collection that contains a user's post when added and t
 
 - When the logo is clicked, it brings the user to the Home Page. This has been tested on desktop, tablet, and mobile views and from all pages.
 - The navigation links change depending on if the user is authorized or not, this has been tested.
-  Authorised user - Home, Browse, Profile, Add , Log Out
-  Unauthorised user - Home, Register, Log In
+  Authorized user - Home, Browse, Profile, Add, Log Out
+  Unauthorized user - Home, Register, Log In
 - All links in the navbar are working and have been tested.
 - The hamburger menu appears on screen sizes smaller than 992px. When clicked/tapped, it expands to reveal page links. These have been tested and are working as expected.
 - When the social links are clicked, they open the relevant social media page.
 
 #### Home
 
-- All links and buttons dispplayed on the page work correctly and redirect user to the right pages.
-- When the theory images are clicked on within the sneak peak section, the article of the theory appears on a pop up page with an image and the top and a close, icon and button.
+- All links and buttons displayed on the page work correctly and redirect users to the right pages.
+- When the theory images are clicked on within the sneak peek section, the article of the theory appears on a pop-up page with an image and the top and a close, icon and button.
 
 #### Browse
 
-- Authenticated users are able to search for their desired theory by typing it into the search bar at the top of the page. The search results appear bellow.
+- Authenticated users can search for their desired theory by typing it into the search bar at the top of the page. The search results appear below.
 - Next to the search bar, there is a clear button that clears the text written on the bar and clears the results found.
 - The theories posted by the community are displayed 3 posts on large screen sizes, 2 on medium, and 1 on small.
-- Within each post you can see the title, theory and the user's username that posted it
+- Within each post, you can see the title, theory, and the user's username that posted it
 
 #### Login
 
@@ -321,16 +321,16 @@ Above, we have the posts collection that contains a user's post when added and t
 
 #### Register
 
-- Username and Password are required and form will not submit unless they have been entered in the required format.
-- Once details have been filled correctly, the user is taken to their profile page.
+- Username and Password are required and the form will not submit unless they have been entered in the required format.
+- Once details have been filled in correctly, the user is taken to their profile page.
 
 #### Profile
 
 - Users can view their posts and also add a new post from their profile.
 - They are given the option to edit or delete their posts.
-- When the user clicks on delete, a pop up message appears, making sure they want to delete the post and that they cannot undo it.
+- When the user clicks on delete, a pop-up message appears, making sure they want to delete the post and that they cannot undo it.
 - When the edit button is clicked on, the user is taken to the edit page where they can see a form prefilled with the theory name and description. This enables the user to edit both fields and save the changes made.
-- When the users profile is viewed on a smaller screen, their posts that they have posted are on all displayed in one column.
+- When the user's profile is viewed on a smaller screen, the posts that they have posted are all displayed in one column.
 
 #### Footer
 
@@ -369,11 +369,11 @@ Once I had finished the code for the project and put the URL into the validators
 
 <br>
 
-a. " I want to find using the website's functionality simple with clear clear navigation."
+a. " I want to find using the website's functionality simple with clear navigation."
 
-- The navigation is simple to use with a simplistic navigation bar to follow. All links take the user to the relevant pages. Th nvigation bar transforms into a hamburger menu when viewed on smaller screens and aslo keeps the simplisity of usage flowing.
+- The navigation is simple to use with a simplistic navigation bar to follow. All links take the user to the relevant pages. The navigation bar transforms into a hamburger menu when viewed on smaller screens and also keeps the simplicity of usage flowing.
 - <details>
-  <summary>Users a greeted with a short and simple summary on the landing page with a link to the browse page. Through the summary, they can understand immediately what the site's focus is and what they are able to do with access to the site.</summary>
+  <summary>Users a greeted with a short and simple summary on the landing page with a link to the browse page. Through the summary, they can understand immediately what the site's focus is and what they can do with access to the site.</summary>
     <img src="https://user-images.githubusercontent.com/75024926/130268776-5a903380-b7c3-4101-a4b3-966c608b3180.png">
   </details>
 - <details>
@@ -429,8 +429,8 @@ g. "I want to be able to navigate to the login page and Login easily."
 
 - The login form only contains 2 fields. making it quick and easy for authentication.
 - If the user Logs Out, they are redirected to the login page in case they want to Log in again.
-- If the user clicks on the 'Register' page they can find the 'Log In' page link under the login form in a contrasting color.
-- The 'Log In' page is located and clearly labeled in the navigation bar.
+- If the user clicks on the 'Register' page they can find the 'Login' page link under the login form in a contrasting color.
+- The 'Login' page is located and clearly labeled in the navigation bar.
 
 h. "I want to post new theories easily."
 
@@ -438,9 +438,9 @@ h. "I want to post new theories easily."
 - The add form is responsive and easy to use.
 - Users can add posts through their profile as they have a button that redirects them to the add post form
 
-i."I want to view all posts that were created by me."
+i." I want to view all posts that were created by me."
 
-- All posts that have been created by the user can be seen my deafault on their profile
+- All posts that have been created by the user can be seen by default on their profile
 
 j. "I want to be able to Log out."
 
@@ -471,7 +471,7 @@ j. "I want to be able to Log out."
 
     - Through this code, I wanted to make the form's width 355px until it was viewed on a larger screen however, this didn't seem to work. I did some debugging and realized that the code wasn't being read because there was an extra '}' above the code and it was being used. Once I removed the extra curly bracket, the media query was working and the form appeared centered on smaller devices, but it was moved to the left on the desktop.
 
-    - Realizing that it hadnt worked, i then switched it around and added this which fixed the issue :
+    - Realizing that it hadn't worked, I then switched it around and added this which fixed the issue :
 
           @media screen and (min-width: 522px) {
           .login-page {
@@ -489,13 +489,13 @@ j. "I want to be able to Log out."
 
 3.  The search bar on the browse page didn't let users click on it to write
 
-- I had an issue where the search bar couldnt be clicked on, meaning something was blocking it. It took me a while to figure out however when looking at the CSS, i realised there was : pointer-events: none; being applied onto the class of the input field. Once this was removed, it was working fine.
+- I had an issue where the search bar couldn't be clicked on, meaning something was blocking it. It took me a while to figure out however when looking at the CSS, I realized there was : pointer-events: none; being applied onto the class of the input field. Once this was removed, it was working fine.
 
 # Deployment
 
 ## Local - Instructions to run the project on your local device using an IDE
 
-1. Within the project repository, Download the files locally  by clicking the 'Code' button located in the top section of the repository. Then select 'Download ZIP' and unzip the files in the directory of your choice.
+1. Within the project repository, Download the files locally by clicking the 'Code' button located in the top section of the repository. Then select 'Download ZIP' and unzip the files in the directory of your choice.
   
   <img src="readme-docs/code.png">
 
@@ -538,16 +538,16 @@ j. "I want to be able to Log out."
 
            echo web: python app.py > Procfile
 
-4. Add your environment variables. This can be done by going to the 'Settings' tab and click 'Reveal Config Vars' and add the following variables
+4. Add your environment variables. This can be done by going to the 'Settings' tab and clicking 'Reveal Config Vars' and adding the following variables
 
           IP <0.0.0.0>
           MONGO_DBNAME <ghibli_theories>
           MONGO_URI <mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority>
           SECRET_KEY <your_secret_key>
 
-5. Ensure that recent files have been added, committed and pushed to your GitHub repository
+5. Ensure that recent files have been added, committed, and pushed to your GitHub repository
 
-6. At the top of the heroku site, click on *Deploy*. Choose automatic deploys to your Github account and repo name. Once this is done, you can open the app.
+6. At the top of the Heroku site, click on *Deploy*. Choose automatic deploys to your Github account and repo name. Once this is done, you can open the app.
 
  
 ## Github

@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-        <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
@@ -11,15 +10,14 @@
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5">Studio Ghibli is known for its cuteness,magic and creativity.But, much like everything else in life, there is a dark side...with some pretty dark theories.<p>
                         {% if "user" in session %}
-                        <a class="btn btn-primary btn-xl" href="{{ url_for("get_posts") }}">BROWSE THEORIES</a>
+                        <a class="btn btn-primary btn-xl" href="{{ url_for('get_posts') }}">BROWSE THEORIES</a>
                         {% else %}
-                        <a class="btn btn-primary btn-xl" href="{{ url_for("register") }}">BROWSE THEORIES</a>
+                        <a class="btn btn-primary btn-xl" href="{{ url_for('register') }}">BROWSE THEORIES</a>
                         {% endif %}
                     </div>
                 </div>
             </div>
         </header>
-        <!-- About-->
         <section class="page-section bg-primary" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -28,15 +26,14 @@
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">Join the community and stay in the loop with the latest theories on Ghibli films! Become a member and share your theories with others!</p>
                         {% if session.user %}
-                        <a class="btn btn-light btn-xl" href="{{ url_for("register") }}">REGISTER NOW!</a>
+                        <a class="btn btn-light btn-xl" href="{{ url_for('register') }}">REGISTER NOW!</a>
                         {% else %}
-                        <a class="btn btn-light btn-xl" href="{{ url_for("register") }}">REGISTER NOW!</a>
+                        <a class="btn btn-light btn-xl" href="{{ url_for('profile', username=session['user']) }}">REGISTER NOW!</a>
                         {% endif %}
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Services-->
               <section class="page-section bg-light" id="portfolio">
                   <div class="container">
                       <div class="text-center">
@@ -45,7 +42,6 @@
                       </div>
                       <div class="row">
                           <div class="col-lg-4 col-sm-6 mb-4">
-                              <!-- Portfolio item 1-->
                               <div class="portfolio-item">
                                   <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                       <div class="portfolio-hover">
@@ -60,7 +56,6 @@
                               </div>
                           </div>
                           <div class="col-lg-4 col-sm-6 mb-4">
-                              <!-- Portfolio item 2-->
                               <div class="portfolio-item">
                                   <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                       <div class="portfolio-hover">
@@ -75,7 +70,6 @@
                               </div>
                           </div>
                           <div class="col-lg-4 col-sm-6 mb-4">
-                              <!-- Portfolio item 3-->
                               <div class="portfolio-item">
                                   <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                       <div class="portfolio-hover">
@@ -90,7 +84,6 @@
                               </div>
                           </div>
                           <div class="col-lg-4 col-sm-6 mb-4">
-                              <!-- Portfolio item 4-->
                               <div class="portfolio-item">
                                   <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                       <div class="portfolio-hover">
@@ -105,7 +98,6 @@
                               </div>
                           </div>
                           <div class="col-lg-4 col-sm-6 mb-4">
-                              <!-- Portfolio item 5-->
                               <div class="portfolio-item">
                                   <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                       <div class="portfolio-hover">
@@ -120,7 +112,6 @@
                               </div>
                           </div>
                           <div class="col-lg-4 col-sm-6 mb-4">
-                              <!-- Portfolio item 6-->
                               <div class="portfolio-item">
                                   <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                       <div class="portfolio-hover">
@@ -138,9 +129,9 @@
                               <h2 class="text-black mt-0" style="color:black;">WANT TO SEE MORE?</h2>
                               <hr class="divider divider-dark" style="color:black;"/>
                               {% if session.user %}
-                              <a class="btn btn-light btn-xl" href="{{ url_for("register") }}">REGISTER NOW!</a>
+                              <a class="btn btn-light btn-xl" href="{{ url_for('register') }}">REGISTER NOW!</a>
                               {% else %}
-                              <a class="btn btn-light btn-xl" href="{{ url_for("register") }}">REGISTER NOW!</a>
+                              <a class="btn btn-light btn-xl" href="{{ url_for('profile', username=session['user']) }}">REGISTER NOW!</a>
                               {% endif %}
                           </div>
                       </div>
@@ -155,7 +146,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Yubaba's Brothel</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/films/fullsize/1.jpg') }}" alt="..." />
                                     <p>This is one of the most famous Studio Ghibli theories and it certainly has weight, with Miyazaki himself confirming that the bathhouse in Spirited Away was indeed inspired by the sex industry, saying that "Hasn’t Japanese society become like the sex industry?”
@@ -180,7 +170,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Totoro Is Inspired By The Sayama Incident</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/films/fullsize/2.jpg') }}" alt="..." />
                                     <p>
@@ -206,7 +195,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">San Wears Her Sister's Skin</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/films/fullsize/3.jpg') }}" alt="..." />
                                     <p>For many, Princess Mononoke is the best Ghibli movie. The film is an action-packed epic that tells a cautionary tale of humanity coming into conflict with nature, a moral that is even more necessary when we take into account the climate emergency the world finds itself in.
@@ -231,7 +219,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Totoro Is The God Of Death</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/films/fullsize/4.jpg') }}" alt="..." />
                                     <p>This entry is tied to the earlier entry of the Sayama incident. Essentially, according to the theory, the film is like a twisted version of Alice in Wonderland, however, instead of entering some magical world, Mei and Satsuki are both dead and Totoro is shepherding them through the underworld.
@@ -256,7 +243,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">YWhisper Of The Heart Inspired Suicides</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/films/fullsize/5.jpg') }}" alt="..." />
                                     <p>Whisper of the Heart may not be one of the most famous Ghibli films, but it still a fantastic movie in its own right and even spawned a kind of sequel with the Cat Returns. However, there is an urban legend that this charming film allegedly inspired several suicides after it was rebroadcast on TV.
@@ -282,7 +268,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Afterlife At The End Of Ponyo</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/films/fullsize/6.jpg') }}" alt="..." />
                                     <p>Ponyo is another Ghibli movie that appears to be another lighthearted, fairytale movie that children around the world could fall in the love with. The film tells the story of Ponyo (or Brunhilde) who ends up being washed ashore and grows close to a boy named Sōsuke in the process.

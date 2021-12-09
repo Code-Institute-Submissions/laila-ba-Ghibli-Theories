@@ -21,7 +21,11 @@
         <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
                 Register <i class="fas fa-sign-in-alt"></i>
        </button>
-       <p class="message">Already registered? <a href="{{ url_for("login") }}">Log In</a></p>
+       {% if session.user %}
+          <a class="message" href="{{ url_for('profile', username=session['user']) }}">Log In</a>
+        {% else %}
+        <p class="message">Already registered? <a href="{{ url_for('login') }}">Log In</a></p>
+        {% endif %}
   </form>
       </div>
     </div>

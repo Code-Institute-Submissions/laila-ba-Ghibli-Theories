@@ -26,9 +26,9 @@
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">Join the community and stay in the loop with the latest theories on Ghibli films! Become a member and share your theories with others!</p>
                         {% if session.user %}
-                        <a class="btn btn-light btn-xl" href="{{ url_for('register') }}">REGISTER NOW!</a>
-                        {% else %}
                         <a class="btn btn-light btn-xl" href="{{ url_for('profile', username=session['user']) }}">REGISTER NOW!</a>
+                        {% else %}
+                        <a class="btn btn-light btn-xl" href="{{ url_for('register') }}">REGISTER NOW!</a>
                         {% endif %}
                     </div>
                 </div>
@@ -129,9 +129,9 @@
                               <h2 class="text-black mt-0" style="color:black;">WANT TO SEE MORE?</h2>
                               <hr class="divider divider-dark" style="color:black;"/>
                               {% if session.user %}
-                              <a class="btn btn-light btn-xl" href="{{ url_for('register') }}">REGISTER NOW!</a>
-                              {% else %}
                               <a class="btn btn-light btn-xl" href="{{ url_for('profile', username=session['user']) }}">REGISTER NOW!</a>
+                              {% else %}
+                              <a class="btn btn-light btn-xl" href="{{ url_for('register') }}">REGISTER NOW!</a>
                               {% endif %}
                           </div>
                       </div>
